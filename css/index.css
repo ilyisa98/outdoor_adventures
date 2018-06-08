@@ -1,40 +1,21 @@
-//fonts
-
-@import url('https://fonts.googleapis.com/css?family=Lobster');
-@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
-@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
-
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+@import url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah");
 .container {
   width: 100hh;
-  height: 180vh;
+  height: 240vh;
   background-color: transparent;
   background-blend-mode: color-burn;
   display: grid;
   grid-template-rows: repeat(20, 1fr);
   grid-template-columns: repeat(10, 1fr);
-  background-image: url(../images/contact_us_main.jpeg);
-  background-repeat: repeat-y; }
+  background-image: url(../images/blurred.jpg);
+  background-size: cover; }
 
 /*nav bar*/
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding-left: 0px; }
-
-li, a {
-  display: inline-block;
-  text-decoration: none;
-  color: #333333;
-  font-size: 20px;
-  font-family: cursive;
-  padding-left: 30px;
-  padding-right: 30px;
-  text-align: center;
-  margin-left: 16px; }
-
 nav {
-  position: sticky;
   padding: 3px;
+  text-align: center;
   grid-column-start: 3;
   grid-column-end: 9;
   grid-row-start: 1;
@@ -44,13 +25,14 @@ nav {
   border-radius: 10px;
   z-index: 1; }
 
-.company_name {
-  font-size: 50px;
-  color: white;
-  font-family: 'Kaushan Script', cursive;
+li, a {
+  display: inline-block;
+  text-decoration: none;
+  color: #333333;
+  font-size: 20px;
+  font-family: cursive;
   text-align: center;
-  font-variant: small-caps;
-  text-shadow: 2px 2px #ff0000; }
+  margin-left: 16px; }
 
 a:hover {
   color: white;
@@ -60,28 +42,24 @@ a:active {
   background-color: #4CAF50;
   color: white; }
 
-/*main img*/
-.main_img {
-  display: inline-grid;
-  grid-column-start: 2;
-  grid-column-end: 10;
-  grid-row-start: 1;
-  grid-row-end: 5;
-  border-radius: 10px; }
+p {
+  margin-top: -10px;
+  margin-bottom: -5px;
+  color: black;
+  font-family: 'Lobster', cursive; }
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #C7E0F4;
+  background-color: transparent;
   border-radius: 10px; }
 
 a, .dropbtn {
   display: inline-block;
   color: white;
   text-align: center;
-  padding: 8px 8px;
   text-decoration: none; }
 
 li a:hover, .dropdown:hover .dropbtn {
@@ -100,19 +78,38 @@ li.dropdown {
 
 .dropdown-content a {
   color: black;
-  padding: 10px 10px;
+  font-size: 15px;
+  padding: 1px 1px;
+  margin-left: 0px;
   text-decoration: none;
   display: block;
   text-align: left; }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1; }
+  background-color: #BE5731;
+  color: white; }
 
 .dropdown:hover .dropdown-content {
   display: block; }
 
-/*outdoor activities*/
+.company_name {
+  font-size: 55px;
+  color: white;
+  font-family: 'Kaushan Script', cursive;
+  text-align: center;
+  font-variant: small-caps;
+  text-shadow: 2px 2px #ff0000; }
 
+/*main img*/
+.main_img {
+  display: inline-grid;
+  grid-column-start: 2;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  border-radius: 10px; }
+
+/*outdoor activities*/
 .outdoor_activities {
   display: block;
   grid-column-start: 1;
@@ -127,11 +124,11 @@ li.dropdown {
   grid-column-end: 8;
   grid-row-start: 7;
   font-size: 40px;
-  color: white;
-  font-family: 'Kaushan Script', cursive;
+  color: #333333;
+  font-family: 'Lobster', cursive;
   text-align: center;
   font-variant: small-caps;
-  text-shadow: 2px 2px #333333; }
+  text-shadow: 2px 2px #fff; }
 
 /*activity descriptions*/
 .desc {
@@ -141,7 +138,6 @@ li.dropdown {
   color: black; }
 
 /*hiking image*/
-
 .gallery_hiking {
   display: inline-block;
   grid-column-start: 5;
@@ -170,7 +166,6 @@ li.dropdown {
 /*all anchor borders*/
 a * {
   border-radius: 10px; }
-
 
 /*camping image*/
 .gallery_camping {
@@ -229,22 +224,16 @@ a * {
   transition: all 2s ease-in-out;
   transform: rotate(-360deg) scale(1); }
 
-
 /*descriptions*/
 .activities_desc {
   display: block;
   grid-column-start: 1;
   grid-column-end: 11;
-  grid-row-start: 10;
+  grid-row-start: 11;
   grid-row-end: 15; }
 
-#hiking_desc {
+#hiking_desc, #camping_desc, #fishing_desc, #rock_desc {
   display: inline-block;
-  margin-top: 15px;
-  grid-column-start: 5;
-  grid-column-end: 6;
-  grid-row-start: 10;
-  grid-row-end: 11;
   width: 250px;
   height: 250px;
   margin-left: 60px;
@@ -253,93 +242,64 @@ a * {
   text-align: center;
   border: 1px solid black;
   border-radius: 10px;
+  font-size: 12px; }
+
+#hiking_desc {
+  margin-top: 15px;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 13;
+  grid-row-end: 14;
   background-image: url(../images/hikers.jpg);
   background-position: left top; }
 
 #camping_desc {
-  display: inline-block;
-  margin-top: 50px;
+  margin-top: 15px;
   grid-column-start: 6;
   grid-column-end: 7;
-  grid-row-start: 10;
-  grid-row-end: 11;
-  width: 250px;
-  height: 250px;
-  margin-left: 60px;
-  color: #fff;
-  overflow: visible;
-  text-align: center;
-  border: 1px solid black;
-  border-radius: 10px;
+  grid-row-start: 13;
+  grid-row-end: 14;
   background-image: url(../images/camping.jpg); }
 
 #fishing_desc {
-  display: inline-block;
   margin-top: 15px;
   grid-column-start: 7;
   grid-column-end: 8;
-  grid-row-start: 10;
-  grid-row-end: 11;
-  width: 250px;
-  height: 250px;
-  margin-left: 60px;
-  color: #fff;
-  overflow: visible;
-  text-align: center;
-  border: 1px solid black;
-  border-radius: 10px;
+  grid-row-start: 13;
+  grid-row-end: 14;
   background-image: url(../images/fishing.jpg); }
 
 #rock_desc {
-  display: inline-block;
   margin-top: 15px;
   grid-column-start: 8;
   grid-column-end: 9;
-  grid-row-start: 10;
-  grid-row-end: 11;
-  width: 250px;
-  height: 250px;
-  margin-left: 60px;
-  color: #fff;
-  overflow: visible;
-  text-align: center;
-  border: 1px solid black;
-  border-radius: 10px;
+  grid-row-start: 13;
+  grid-row-end: 14;
   background-image: url(../images/rock_climb.jpeg); }
 
 footer {
   display: inline-block;
-  margin-top: 15px;
+  margin-top: 20px;
   grid-column-start: 1;
   grid-column-end: 11;
-  grid-row-start: 19;
-  grid-row-end: 20;
+  grid-row-start: 20;
+  grid-row-end: 21;
   border-radius: 10px;
   z-index: 2;
-  position: relative; 
-background-color: transparent;
-border: 1px solid black;}
+  position: relative;
+  background-color: transparent;
+  border: 1px solid black; }
 
-.foot{
-    text-align: center;
-    font-size: 16px;
-    color: #000;
-}
-
-
-
-
-
+.foot {
+  text-align: center;
+  font-size: 16px;
+  color: #000; }
 
 /*responsiveness*/
-/*large laptop*/
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
   .container {
     width: 1440px;
-    height: 250vh;
-    display: grid;
-    grid-template-rows: repeat(20, 1fr);
-    grid-template-columns: repeat(10, 1fr);
+    height: 240vh;
     background-size: cover; }
 
   .main_img {
@@ -350,50 +310,31 @@ border: 1px solid black;}
     grid-row-end: 2;
     border-bottom-left-radius: 10px; }
 
+  .company_name {
+    font-size: 55px; }
+
   /*   nav bar */
   nav {
-    position: sticky;
-    padding: 2px;
-    grid-column-start: 2;
-    grid-column-end: 10;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    border-radius: 10px;
-    z-index: 1;
     text-align: center; }
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding-left: 0px; }
+  p {
+    font-size: 25px; }
 
   li, a {
-    display: inline-block;
-    text-decoration: none;
-    color: #333333;
-    font-size: 18px;
-    font-family: cursive;
     padding-left: 6px;
     padding-right: 3px;
-    text-align: center;
     margin-left: 4px; }
 
   .dropdown-content a {
+    font-size: 16px;
     color: black;
     padding: 5px 5px;
-    text-decoration: none;
-    display: block;
-    text-align: left; }
+    display: block; }
 
   a, .dropbtn {
     display: inline-block;
     color: white;
-    text-align: center;
-    padding: 5px 3px;
-    text-decoration: none; }
-
-  .company_name {
-    font-size: 45px; }
+    padding: 5px 3px; }
 
   .outdoor_activities {
     display: block;
@@ -467,84 +408,48 @@ border: 1px solid black;}
 
   .activities_desc {
     display: block;
+    font-size: 19px;
     grid-column-start: 1;
     grid-column-end: 11;
-    grid-row-start: 7;
+    grid-row-start: 11;
     grid-row-end: 15; }
 
   #hiking_desc {
-    display: inline-block;
-    margin-top: 15px;
     grid-column-start: 5;
     grid-column-end: 6;
-    grid-row-start: 8;
-    grid-row-end: 9;
-    width: 250px;
-    height: 250px;
-    font-size: 12px;
+    grid-row-start: 11;
+    grid-row-end: 12;
     margin-left: 95px;
     margin-top: 100px; }
 
   #camping_desc {
-    display: inline-block;
-    margin-top: 15px;
     grid-column-start: 6;
     grid-column-end: 7;
-    grid-row-start: 8;
-    grid-row-end: 9;
-    width: 250px;
-    height: 250px;
-    font-size: 12px;
+    grid-row-start: 11;
+    grid-row-end: 12;
     margin-bottom: 15px;
     margin-left: 75px; }
 
   #fishing_desc {
-    display: inline-block;
-    margin-top: 15px;
     grid-column-start: 5;
     grid-column-end: 6;
-    grid-row-start: 10;
-    grid-row-end: 11;
-    width: 250px;
-    height: 250px;
-    font-size: 12px;
+    grid-row-start: 11;
+    grid-row-end: 12;
     margin-left: 65px; }
 
   #rock_desc {
-    display: inline-block;
-    margin-top: 15px;
     grid-column-start: 6;
     grid-column-end: 7;
     grid-row-start: 10;
     grid-row-end: 11;
-    width: 250px;
-    height: 250px;
-    font-size: 12px;
     margin-left: 75px; }
 
-footer {
-  display: inline-block;
-  margin-top: 15px;
-  grid-column-start: 1;
-  grid-column-end: 11;
-  grid-row-start: 19;
-  grid-row-end: 20;
-  border-radius: 10px;
-  z-index: 2;
-  position: relative; 
-  background-color: transparent;
-  border: 1px solid black}
-
-.foot{
-    text-align: center;
-    font-size: 16px;
-    color: #000;
-}
-}
-
-
-
-/*laptop*/
+  #hiking_desc, #camping_desc, #fishing_desc, #rock_desc {
+    display: inline-block;
+    margin-top: 15px;
+    width: 250px;
+    height: 250px;
+    font-size: 12px; } }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .container {
     width: 1024px;
@@ -564,45 +469,27 @@ footer {
 
   /*   nav bar */
   nav {
-    position: sticky;
-    padding: 2px;
-    grid-column-start: 2;
-    grid-column-end: 10;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    border-radius: 10px;
-    z-index: 1;
     text-align: center; }
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding-left: 0px; }
+  p {
+    font-size: 20px; }
 
   li, a {
-    display: inline-block;
-    text-decoration: none;
-    color: #333333;
-    font-size: 16px;
-    font-family: cursive;
     padding-left: 6px;
     padding-right: 3px;
-    text-align: center;
     margin-left: 4px; }
 
   .dropdown-content a {
+    font-size: 16px;
     color: black;
     padding: 5px 5px;
-    text-decoration: none;
     display: block;
-    text-align: left; }
+    margin-left: -10px; }
 
   a, .dropbtn {
     display: inline-block;
     color: white;
-    text-align: center;
-    padding: 5px 3px;
-    text-decoration: none; }
+    padding: 5px 3px; }
 
   .company_name {
     font-size: 45px; }
@@ -730,30 +617,7 @@ footer {
     width: 250px;
     height: 250px;
     font-size: 12px;
-    margin-left: 105px; }
-
-  footer {
-  display: inline-block;
-  margin-top: 15px;
-  grid-column-start: 1;
-  grid-column-end: 11;
-  grid-row-start: 19;
-  grid-row-end: 20;
-  border-radius: 10px;
-  z-index: 2;
-  position: relative; 
-  background-color: transparent;
-  border: 1px solid black}
-
-.foot{
-    text-align: center;
-    font-size: 16px;
-    color: #000;
-}
- }
-
-
-/* tablet*/
+    margin-left: 105px; } }
 @media screen and (min-width: 426px) and (max-width: 768px) {
   .container {
     width: 768px;
@@ -773,38 +637,23 @@ footer {
 
   /*   nav bar */
   nav {
-    position: sticky;
-    padding: 2px;
-    grid-column-start: 2;
-    grid-column-end: 10;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    border-radius: 10px;
-    z-index: 1;
     text-align: center; }
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding-left: 0px; }
+  p {
+    margin-top: -5px;
+    font-size: 20px; }
 
   li, a {
     display: inline-block;
-    text-decoration: none;
-    color: #333333;
     font-size: 14px;
-    font-family: cursive;
-    padding-left: 6px;
-    padding-right: 3px;
-    text-align: center;
     margin-left: 4px; }
 
   .dropdown-content a {
+    font-size: 14px;
     color: black;
-    padding: 5px 5px;
-    text-decoration: none;
+    padding: 2px 2px;
     display: block;
-    text-align: left; }
+    margin-left: 0px; }
 
   a, .dropbtn {
     display: inline-block;
@@ -814,7 +663,7 @@ footer {
     text-decoration: none; }
 
   .company_name {
-    font-size: 25px; }
+    font-size: 45px; }
 
   .outdoor_activities {
     display: block;
@@ -894,7 +743,6 @@ footer {
 
   #hiking_desc {
     display: inline-block;
-    margin-top: 15px;
     grid-column-start: 5;
     grid-column-end: 6;
     grid-row-start: 9;
@@ -919,7 +767,6 @@ footer {
 
   #fishing_desc {
     display: inline-block;
-    margin-top: 15px;
     grid-column-start: 5;
     grid-column-end: 6;
     grid-row-start: 12;
@@ -928,11 +775,10 @@ footer {
     height: 200px;
     font-size: 12px;
     margin-left: 105px;
-    margin-top: 0px; }
+    margin-top: 50px; }
 
   #rock_desc {
     display: inline-block;
-    margin-top: 15px;
     grid-column-start: 6;
     grid-column-end: 7;
     grid-row-start: 12;
@@ -941,30 +787,7 @@ footer {
     height: 200px;
     font-size: 12px;
     margin-left: 105px;
-    margin-top: 50px; }
-
- footer {
-  display: inline-block;
-  margin-top: 15px;
-  grid-column-start: 1;
-  grid-column-end: 11;
-  grid-row-start: 19;
-  grid-row-end: 20;
-  border-radius: 10px;
-  z-index: 2;
-  position: relative; 
-  background-color: transparent;
-  border: 1px solid black}
-
-.foot{
-    text-align: center;
-    font-size: 16px;
-    color: #000;
-}
- }
-
-
-/* large mobile*/
+    margin-top: 50px; } }
 @media screen and (min-width: 375px) and (max-width: 425px) {
   .container {
     width: 425px;
@@ -994,33 +817,27 @@ footer {
     z-index: 1; }
 
   ul {
-    list-style-type: none;
-    margin: 0;
-    padding-left: 0px; }
+    text-align: center; }
+
+  p {
+    margin-top: -5px;
+    font-size: 15px; }
 
   li, a {
-    display: inline-block;
-    text-decoration: none;
-    color: #333333;
-    font-size: 14px;
-    font-family: cursive;
-    padding-left: 3px;
-    padding-right: 3px;
-    text-align: center;
     margin-left: 4px; }
 
   .dropdown-content a {
-    color: black;
-    padding: 5px 5px;
-    text-decoration: none;
+    padding: 2px 2px;
     display: block;
-    text-align: left; }
+    color: black;
+    font-size: 14px; }
 
   a, .dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
     padding: 5px 3px;
+    font-size: 14px;
     text-decoration: none; }
 
   .company_name {
@@ -1150,29 +967,9 @@ footer {
     font-size: 12px;
     margin-left: 105px; }
 
-footer {
-  display: inline-block;
-  margin-top: 15px;
-  grid-column-start: 1;
-  grid-column-end: 11;
-  grid-row-start: 19;
-  grid-row-end: 20;
-  border-radius: 10px;
-  z-index: 2;
-  position: relative; 
-  background-color: transparent;
-  border: 1px solid black}
-
-.foot{
-    text-align: center;
-    font-size: 16px;
-    color: #000;
-}
- }
-    
-    
-    
-/*medium mobile*/
+  footer {
+    padding: 0px;
+    height: 25px; } }
 @media screen and (min-width: 320px) and (max-width: 375px) {
   .container {
     width: 375px;
@@ -1201,34 +998,28 @@ footer {
     z-index: 1; }
 
   ul {
-    list-style-type: none;
-    margin: 0;
-    padding-left: 0px; }
+    text-align: center; }
+
+  p {
+    margin-top: -5px;
+    font-size: 15px; }
 
   li, a {
-    display: inline-block;
-    text-decoration: none;
-    color: #333333;
-    font-size: 14px;
-    font-family: cursive;
     padding-left: 2px;
     padding-right: 2px;
-    text-align: center;
-    margin-left: 4px; }
+    margin-left: 2px; }
 
   a, .dropbtn {
     display: inline-block;
     color: white;
-    text-align: center;
-    padding: 2px 2px;
-    text-decoration: none; }
+    font-size: 14px;
+    padding: 3px 3px; }
 
   .dropdown-content a {
     color: black;
-    padding: 5px 5px;
-    text-decoration: none;
+    padding: 15px 0px;
     display: block;
-    text-align: left; }
+    line-height: 2px; }
 
   .company_name {
     font-size: 25px; }
@@ -1357,28 +1148,9 @@ footer {
     font-size: 12px;
     margin-left: 80px; }
 
-footer {
-  display: inline-block;
-  margin-top: 15px;
-  grid-column-start: 1;
-  grid-column-end: 11;
-  grid-row-start: 19;
-  grid-row-end: 20;
-  border-radius: 10px;
-  z-index: 2;
-  position: relative; 
-  background-color: transparent;
-  border: 1px solid black}
-
-.foot{
-    text-align: center;
-    font-size: 16px;
-    color: #000;
-}
-}
-    
-    
-/*small mobile*/
+  footer {
+    padding: 0px;
+    height: 25px; } }
 @media screen and (max-width: 320px) {
   .container {
     width: 320px;
@@ -1407,27 +1179,25 @@ footer {
     z-index: 1; }
 
   ul {
-    list-style-type: none;
-    margin: 0;
-    padding-left: 0px; }
+    text-align: center; }
+
+  p {
+    margin-top: -5px;
+    font-size: 15px; }
 
   li, a {
-    display: inline-block;
-    text-decoration: none;
-    color: #333333;
     font-size: 12px;
-    font-family: cursive;
     padding-left: 1px;
     padding-right: 1px;
-    text-align: center;
     margin-left: 2px; }
 
   .dropdown-content a {
     color: black;
-    padding: 5px 5px;
+    padding: 10px 15px;
     text-decoration: none;
     display: block;
-    text-align: left; }
+    text-align: left;
+    line-height: 2px; }
 
   a, .dropbtn {
     display: inline-block;
@@ -1437,7 +1207,7 @@ footer {
     text-decoration: none; }
 
   .company_name {
-    font-size: 18px; }
+    font-size: 24px; }
 
   .outdoor_activities {
     display: block;
@@ -1563,24 +1333,8 @@ footer {
     font-size: 12px;
     margin-left: 60px; }
 
-footer {
-  display: inline-block;
-  margin-top: 15px;
-  grid-column-start: 1;
-  grid-column-end: 11;
-  grid-row-start: 19;
-  grid-row-end: 20;
-  border-radius: 10px;
-  z-index: 2;
-  position: relative; 
-  background-color: transparent;
-  border: 1px solid black}
+  footer {
+    padding: 0px;
+    height: 25px; } }
 
-.foot{
-    text-align: center;
-    font-size: 16px;
-    color: #000;
-}
- }
-
-
+/*# sourceMappingURL=index.css.map */

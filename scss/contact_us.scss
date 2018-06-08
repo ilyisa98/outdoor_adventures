@@ -1,3 +1,5 @@
+@import "partials/contact_us_responsive.scss";
+
 //fonts
 
 @import url('https://fonts.googleapis.com/css?family=Lobster');
@@ -13,7 +15,7 @@
     width: 100hh;
     height: 97vh;
     background-color: #1D140F;
-    background-image: url(../images/contact_main.jpeg);
+    background-image: url(../images/blurred.jpg);
     background-size: cover;
 }
 
@@ -21,28 +23,6 @@
 
 
 //nav bar
-.main_nav_ul {
-  list-style-type: none;
-  margin: 0;
-  padding-left: 0px; }
-
-//main nav list: bullets removed, no margin nor padding
-
-.main_nav_li, .main_nav_a, .dropbtn{
-  display: inline-block;
-  text-decoration: none;
-  color: #333333;
-  font-size: 20px;
-  font-family: cursive;
-  padding-left: 30px;
-  padding-right: 30px;
-  text-align: center;
-   margin-left: 12px;
-}
-
-//main nav: display list items inline, removed underline from links, position the list items in nav
-
-
 .main_nav {
   position: sticky;
   padding: 2px;
@@ -55,8 +35,85 @@
   border-radius: 10px;
   z-index: 1; }
 
-//display main nav in container grid accordingly, display in block form, border radius 10px, background color transparent
+.main_nav_ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  text-align: center; 
+}
 
+.main_nav_li, .main_nav_a, .dropbtn{
+  display: inline-block;
+  text-decoration: none;
+  font-family: cursive;
+ margin-left: 5px;
+}
+
+.main_nav_li, .main_nav_a {
+padding-left: 6px;
+padding-right: 6px;
+margin-right: 6px;
+margin-left: 8px;}
+
+.dropbtn{
+    margin-left: 6px;
+    margin-right: 2px;
+}
+p{
+    margin-top: -10px;
+    margin-bottom: 0px;
+    color: black;
+    font-family: 'Lobster', cursive;
+}
+img{
+    width: 40px;
+    height: 40px;
+}
+.main_nav_a:hover {
+  color: whitesmoke;
+  border-radius: 8px; }
+
+
+
+.main_nav_a, .dropbtn {
+  display: inline-block;
+  color: black;
+    font-size: 30px;
+  text-align: center;
+  text-decoration: none; }
+
+.main_nav_a:hover, .dropdown:hover, main_nav_li:hover, .dropbtn:hover {
+  background-color: #BE5731;
+border-radius: 10px;}
+
+li.dropdown {
+  display: inline-block; }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); 
+  border-radius: 10px;}
+
+.dropdown-content a {
+font-size: 20px;
+padding: 5px 5px;
+display: block;
+color: black;
+margin-left: 0px;
+}
+
+.dropdown-content main_nav_a:hover {
+  background-color: #f1f1f1; }
+
+.dropdown:hover .dropdown-content {
+  display: block; }
+
+//company name
 .company_name {
   font-size: 50px;
   color: white;
@@ -65,82 +122,13 @@
   font-variant: small-caps;
   text-shadow: 2px 2px #ff0000; }
 
-//company name: styling fontsie, color,font-family,font-variant and text shadow accordingly
-
-.main_nav_a:hover {
-  color: whitesmoke;
-  border-radius: 8px; }
-
-//links in main nav: when hovered color and border radius changes
-
-.main_nav_ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #201C1B;
-    border-radius: 10px;
-    text-align: center;
-}
-
-//main nav list items remove bullets, margin and padding = 0, background, border radius and text align styled accordingly
-
-.main_nav_a ,.dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 8px 8px;
-    text-decoration: none;
-}
-
-//main nav links and category btn display inline block, color,text align, padding and text decoration styled accordingly
-
-.main_nav_a:hover, .dropdown:hover, main_nav_li:hover {
-    background-color: #BE5731;
-}
-
-//background color changes when hovered
-
-li.dropdown {
-    display: inline-block;
-}
-
-//drop down items displayed inline block
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    border-radius: 10px;
-}
-
-//drop down content: hidden, styling accordingly
-
-.dropdown-content main_nav_a {
-    color: black;
-    padding: 10px 10px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content main_nav_a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-
-
 //main header
 .main_header{
     display: block;
     grid-column-start: 4;
     grid-column-end: 8;
     grid-row-start: 2;
-    font-size: 18px;
+    font-size: 25px;
     text-align: center;
     color: #fff;
     font-family: 'Gloria Hallelujah', cursive;
@@ -157,7 +145,7 @@ form {
   display: block;
   grid-column-start: 2;
   grid-column-end: 10;
-  grid-row-start: 3;
+  grid-row-start: 4;
   grid-row-end: 10; }
 
 input[type=text], [type=email], select, textarea {
@@ -182,7 +170,7 @@ label {
   font-size: 30px;
   font-family: 'Lobster', cursive;
   vertical-align: top; 
-  color: #fff;}
+  color: #000;}
 
 .first_name_label {
   display: inline-block;
@@ -306,241 +294,46 @@ button{
     margin-left: 170px;
 }
 
+a{
+  text-align: center;
+  color: #fff;
+  font-family: 'Kaushan+Script', cursive;
+  text-decoration: none; }
+
+a:active {
+  background-color: #4CAF50;
+  color: white; }
+
+footer {
+  display: inline-block;
+  margin-top: 15px;
+  grid-column-start: 1;
+  grid-column-end: 11;
+  grid-row-start: 20;
+  grid-row-end: 21;
+  border-radius: 10px;
+  z-index: 2;
+  position: relative; 
+  background-color: transparent;
+  border: 1px solid black;}
+
+.foot{
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+}
 
 /*responsiveness*/
-//large laptop
 
+@include large_laptop;
 
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
-    .container{
-        width: 100hh;
-        height: 100vh;
-    }
-    
-        .email_input{
-        display: inline-block;
-    margin-left: 20px;
-    }
-    
-    .email_label{
-        margin-left: 50px;
-        }
+@include laptop;
 
-      .activity_input{
-    display: inline-block;
-    margin-left: 25px; }
-    
-    
-    .activity_label{
-        margin-left: 20px;
-        }
-      .comments_input{
-        margin-left: -20px;
-        }
-}
+@include tablet;
 
+@include large_mobile;
 
-//laptop
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    .container{
-        width:1024px;
-        height: 120vh;
-    }
-    
-    .main_nav_li, .main_nav_a, .dropbtn {
-        padding-left: 15px;
-        padding-right: 15px;
-        text-align: center;
-        margin-left: 8px; }
-    
-    
-    
-        .email_input{
-            display: inline-block;
-            margin-left: 20px;  }
-    
-        .email_label{
-        margin-left: 50px;
-        }
+@include medium_mobile;
 
-        .activity_input{
-            display: inline-block;
-            margin-left: 25px; }
-    
-    
-        .activity_label{
-            margin-left: 20px;
-        }
-        .comments_input{
-        margin-left: -20px;
-        }
-}
+@include small_mobile;
 
-
-//tablet
-@media screen and (min-width: 425px) and (max-width: 768px) {
-        .container{
-        width:768px;
-        height: 120vh;
-    }
-    
-    .main_nav_li, .main_nav_a, .dropbtn {
-        padding-left: 5px;
-        padding-right: 5px;
-        text-align: center;
-        margin-left: 5px;
-        font-size: 16px;}
-     
-    .email_input{
-        display: inline-block;
-    margin-left: 20px;
-    }
-    
-    .email_label{
-        margin-left: 50px;
-        }
-
-      .activity_input{
-    display: inline-block;
-    margin-left: 25px; }
-    
-    
-    .activity_label{
-        margin-left: 20px;
-        }
-      .comments_input{
-        margin-left: -20px;
-        }
-    
-    
-    
-    
-    
-}
-
-/*large mobile*/
-@media screen and (min-width: 375px) and (max-width: 425px) {
-            .container{
-        width:425px;
-        height: 150vh;
-    }
-    
-    .main_nav_li, .main_nav_a, .dropbtn {
-  padding-left: 0px;
-  padding-right: 3px;
-  text-align: center;
-  margin-left: 0px; 
-    font-size: 14px;}
-    
-    
-     label{
-        font-size: 28px;
-         color: #fff;}
-    
-    .first_name_input,.last_name_input, .email_input, .activity_input{
-    display: block;
-    margin-left: -10px; }
-    
-    .comments_input{
-        margin-left: -180px;
-    }
-    
-    .activity_label{
-        margin-left: 30px;
-    }.email_label{
-        margin-left: 30px;
-    }
-    
-    button{
-        margin-left: 0px;
-    }
-}
-
-/*medium mobile*/
-
-@media screen and (min-width: 320px) and (max-width: 375px) {
-            .container{
-        width:375px;
-        height: 150vh;
-    }
-    
-    .main_nav_li, .main_nav_a, .dropbtn {
-        padding-left: 0px;
-        padding-right: 3px;
-        text-align: center;
-        margin-left: 0px; 
-        font-size: 12px;}
-       
-    .first_name_input,.last_name_input, .email_input, .activity_input{
-    display: block;
-    margin-left: -10px; }
-    
-    .comments_input{
-        margin-left: -180px;
-    }
-    
-    .company_name{
-        font-size: 35px;
-    }
-    
-    label{
-        font-size: 18px;
-        color: #fff;
-    }
-
-    .activity_label, .email_label{
-        margin-left: 20px;
-    }
-    
-    button{
-        margin-left: 0px;
-    }
-}
-
-/*small mobile*/
-
-@media screen and (max-width: 320px){
-            .container{
-        width:320px;
-        height: 120vh;
-    }
-    
-    .main_nav_li, .main_nav_a, .dropbtn {
-        padding-left: 0px;
-        padding-right: 3px;
-        text-align: center;
-        margin-left: 0px; 
-        font-size: 10px;}
-       
-    .first_name_input,.last_name_input, .email_input, .activity_input{
-    display: block;
-    margin-left: -10px; }
-    
-    input[type=text], [type=email], select, textarea {
-        width: 250px;}
-    
-    .main_header{
-        font-size: 14px;
-    }
-    
-    .comments_input{
-        margin-left: -180px;
-    }
-    
-    .company_name{
-        font-size: 25px;
-    }
-    
-    label{
-        font-size: 18px;
-        color: #fff;
-    }
-
-    .activity_label, .email_label{
-        margin-left: 0px;
-    }
-    
-    button{
-        margin-left: 0px;
-    }
-}

@@ -8,24 +8,8 @@
   width: 100hh;
   height: 97vh;
   background-color: #1D140F;
-  background-image: url(../images/contact_main.jpeg);
+  background-image: url(../images/blurred.jpg);
   background-size: cover; }
-
-.main_nav_ul {
-  list-style-type: none;
-  margin: 0;
-  padding-left: 0px; }
-
-.main_nav_li, .main_nav_a, .dropbtn {
-  display: inline-block;
-  text-decoration: none;
-  color: #333333;
-  font-size: 20px;
-  font-family: cursive;
-  padding-left: 30px;
-  padding-right: 30px;
-  text-align: center;
-  margin-left: 12px; }
 
 .main_nav {
   position: sticky;
@@ -39,36 +23,54 @@
   border-radius: 10px;
   z-index: 1; }
 
-.company_name {
-  font-size: 50px;
-  color: white;
-  font-family: 'Kaushan Script', cursive;
-  text-align: center;
-  font-variant: small-caps;
-  text-shadow: 2px 2px #ff0000; }
-
-.main_nav_a:hover {
-  color: whitesmoke;
-  border-radius: 8px; }
-
 .main_nav_ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #201C1B;
   border-radius: 10px;
   text-align: center; }
 
+.main_nav_li, .main_nav_a, .dropbtn {
+  display: inline-block;
+  text-decoration: none;
+  font-family: cursive;
+  margin-left: 5px; }
+
+.main_nav_li, .main_nav_a {
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-right: 6px;
+  margin-left: 8px; }
+
+.dropbtn {
+  margin-left: 6px;
+  margin-right: 2px; }
+
+p {
+  margin-top: -10px;
+  margin-bottom: 0px;
+  color: black;
+  font-family: 'Lobster', cursive; }
+
+img {
+  width: 40px;
+  height: 40px; }
+
+.main_nav_a:hover {
+  color: whitesmoke;
+  border-radius: 8px; }
+
 .main_nav_a, .dropbtn {
   display: inline-block;
-  color: white;
+  color: black;
+  font-size: 30px;
   text-align: center;
-  padding: 8px 8px;
   text-decoration: none; }
 
-.main_nav_a:hover, .dropdown:hover, main_nav_li:hover {
-  background-color: #BE5731; }
+.main_nav_a:hover, .dropdown:hover, main_nav_li:hover, .dropbtn:hover {
+  background-color: #BE5731;
+  border-radius: 10px; }
 
 li.dropdown {
   display: inline-block; }
@@ -81,12 +83,12 @@ li.dropdown {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   border-radius: 10px; }
 
-.dropdown-content main_nav_a {
-  color: black;
-  padding: 10px 10px;
-  text-decoration: none;
+.dropdown-content a {
+  font-size: 20px;
+  padding: 5px 5px;
   display: block;
-  text-align: left; }
+  color: black;
+  margin-left: 0px; }
 
 .dropdown-content main_nav_a:hover {
   background-color: #f1f1f1; }
@@ -94,12 +96,20 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   display: block; }
 
+.company_name {
+  font-size: 50px;
+  color: white;
+  font-family: 'Kaushan Script', cursive;
+  text-align: center;
+  font-variant: small-caps;
+  text-shadow: 2px 2px #ff0000; }
+
 .main_header {
   display: block;
   grid-column-start: 4;
   grid-column-end: 8;
   grid-row-start: 2;
-  font-size: 18px;
+  font-size: 25px;
   text-align: center;
   color: #fff;
   font-family: 'Gloria Hallelujah', cursive;
@@ -109,7 +119,7 @@ form {
   display: block;
   grid-column-start: 2;
   grid-column-end: 10;
-  grid-row-start: 3;
+  grid-row-start: 4;
   grid-row-end: 10; }
 
 input[type=text], [type=email], select, textarea {
@@ -134,7 +144,7 @@ label {
   font-size: 30px;
   font-family: 'Lobster', cursive;
   vertical-align: top;
-  color: #fff; }
+  color: #000; }
 
 .first_name_label {
   display: inline-block;
@@ -254,25 +264,87 @@ button {
   font-size: 14px;
   margin-left: 170px; }
 
+a {
+  text-align: center;
+  color: #fff;
+  font-family: 'Kaushan+Script', cursive;
+  text-decoration: none; }
+
+a:active {
+  background-color: #4CAF50;
+  color: white; }
+
+footer {
+  display: inline-block;
+  margin-top: 15px;
+  grid-column-start: 1;
+  grid-column-end: 11;
+  grid-row-start: 20;
+  grid-row-end: 21;
+  border-radius: 10px;
+  z-index: 2;
+  position: relative;
+  background-color: transparent;
+  border: 1px solid black; }
+
+.foot {
+  text-align: center;
+  font-size: 20px;
+  color: #000; }
+
 /*responsiveness*/
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
   .container {
     width: 100hh;
     height: 100vh; }
 
+  .company_name {
+    font-size: 55px; }
+
+  .main_nav {
+    text-align: center; }
+
+  .main_nav_li, .main_nav_a {
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-left: 4px; }
+
+  .dropdown-content a {
+    font-size: 20px;
+    padding: 5px 5px;
+    display: block;
+    color: black;
+    margin-left: 0px; }
+
+  .main_nav_li, .main_nav_a {
+    margin-right: 5px; }
+
+  .dropbtn {
+    margin-left: 0px;
+    margin-right: 0px; }
+
+  .main_nav_a, .dropbtn {
+    display: inline-block;
+    color: white;
+    padding: 5px 3px;
+    font-size: 20px; }
+
+  p {
+    font-size: 25px; }
+
   .email_input {
     display: inline-block;
-    margin-left: 20px; }
+    margin-left: 13px; }
 
   .email_label {
-    margin-left: 50px; }
+    margin-left: 60px; }
 
   .activity_input {
     display: inline-block;
-    margin-left: 25px; }
+    margin-left: 10px; }
 
   .activity_label {
-    margin-left: 20px; }
+    margin-left: 40px; }
 
   .comments_input {
     margin-left: -20px; } }
@@ -281,25 +353,51 @@ button {
     width: 1024px;
     height: 120vh; }
 
-  .main_nav_li, .main_nav_a, .dropbtn {
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: center;
-    margin-left: 8px; }
+  .main_header {
+    font-size: 18px; }
+
+  .main_nav {
+    text-align: center; }
+
+  p {
+    font-size: 20px; }
+
+  .main_nav_li, .main_nav_a {
+    margin-left: 4px; }
+
+  .dropdown-content a {
+    font-size: 16px;
+    padding: 2px 2px;
+    display: block;
+    color: black;
+    margin-left: -4px; }
+
+  .main_nav_li, .main_nav_a {
+    margin-right: 5px; }
+
+  .dropbtn {
+    margin-left: 0px;
+    margin-right: 0px; }
+
+  .main_nav_a, .dropbtn {
+    display: inline-block;
+    color: white;
+    padding: 5px 3px;
+    font-size: 20px; }
 
   .email_input {
     display: inline-block;
-    margin-left: 20px; }
+    margin-left: 13px; }
 
   .email_label {
-    margin-left: 50px; }
+    margin-left: 60px; }
 
   .activity_input {
     display: inline-block;
-    margin-left: 25px; }
+    margin-left: 10px; }
 
   .activity_label {
-    margin-left: 20px; }
+    margin-left: 40px; }
 
   .comments_input {
     margin-left: -20px; } }
@@ -308,73 +406,178 @@ button {
     width: 768px;
     height: 120vh; }
 
-  .main_nav_li, .main_nav_a, .dropbtn {
-    padding-left: 5px;
-    padding-right: 5px;
-    text-align: center;
-    margin-left: 5px;
-    font-size: 16px; }
+  .main_nav {
+    text-align: center; }
+
+  .main_header {
+    grid-column-start: 3;
+    grid-column-end: 9;
+    font-size: 18px; }
+
+  p {
+    margin-top: -5px;
+    font-size: 20px; }
+
+  .main_nav_li, .main_nav_a {
+    margin-left: 4px; }
+
+  .dropdown-content a {
+    font-size: 14px;
+    color: black;
+    padding: 2px 2px;
+    display: block;
+    margin-left: 0px; }
+
+  .main_nav_li, .main_nav_a {
+    margin-right: 5px; }
+
+  .dropbtn {
+    margin-left: 0px;
+    margin-right: 0px; }
+
+  .main_nav_a, .dropbtn {
+    display: inline-block;
+    color: white;
+    padding: 5px 3px;
+    font-size: 20px; }
 
   .email_input {
     display: inline-block;
-    margin-left: 20px; }
+    margin-left: 13px; }
 
   .email_label {
-    margin-left: 50px; }
+    margin-left: 60px; }
 
   .activity_input {
     display: inline-block;
-    margin-left: 25px; }
+    margin-left: 10px; }
 
   .activity_label {
-    margin-left: 20px; }
+    margin-left: 40px; }
 
   .comments_input {
     margin-left: -20px; } }
-/*large mobile*/
 @media screen and (min-width: 375px) and (max-width: 425px) {
   .container {
     width: 425px;
     height: 150vh; }
 
-  .main_nav_li, .main_nav_a, .dropbtn {
-    padding-left: 0px;
-    padding-right: 3px;
-    text-align: center;
+  .main_header {
+    grid-column-start: 3;
+    grid-column-end: 9;
+    font-size: 16px; }
+
+  form {
+    grid-row-start: 3; }
+
+  .main_nav {
+    text-align: center; }
+
+  .main_nav_li, .main_nav_a {
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-left: 4px; }
+
+  .dropdown-content a {
+    padding: 10px 15px;
+    display: block;
+    color: black;
+    font-size: 14px;
+    line-height: 2px; }
+
+  .main_nav_li, .main_nav_a {
+    margin-right: 5px; }
+
+  .dropbtn {
     margin-left: 0px;
-    font-size: 14px; }
+    margin-right: 0px; }
+
+  .main_nav_a, .dropbtn {
+    display: inline-block;
+    color: white;
+    padding: 5px 3px;
+    font-size: 20px; }
+
+  p {
+    font-size: 14px;
+    margin-top: -5px; }
+
+  .company_name {
+    font-size: 27px; }
+
+  img {
+    width: 30px;
+    height: 30px; }
 
   label {
-    font-size: 28px;
-    color: #fff; }
+    font-size: 25px;
+    color: #000; }
 
   .first_name_input, .last_name_input, .email_input, .activity_input {
     display: block;
     margin-left: -10px; }
 
+  .main_header {
+    display: block;
+    grid-column-start: 3;
+    grid-column-end: 9; }
+
   .comments_input {
     margin-left: -180px; }
 
-  .activity_label {
-    margin-left: 30px; }
-
-  .email_label {
-    margin-left: 30px; }
+  .email_label, .activity_label {
+    margin-left: 10px; }
 
   button {
     margin-left: 0px; } }
-/*medium mobile*/
 @media screen and (min-width: 320px) and (max-width: 375px) {
   .container {
     width: 375px;
     height: 150vh; }
 
-  .main_nav_li, .main_nav_a, .dropbtn {
-    padding-left: 0px;
-    padding-right: 3px;
-    text-align: center;
+  .main_header {
+    grid-column-start: 3;
+    grid-column-end: 9;
+    font-size: 16px; }
+
+  form {
+    grid-row-start: 3; }
+
+  .main_nav {
+    text-align: center; }
+
+  .main_nav_li, .main_nav_a {
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-left: 4px; }
+
+  .dropdown-content a {
+    padding: 10px 15px;
+    display: block;
+    color: black;
+    font-size: 14px;
+    line-height: 2px; }
+
+  img {
+    width: 30px;
+    height: 30px; }
+
+  .main_nav_li, .main_nav_a {
+    margin-right: 5px; }
+
+  .dropbtn {
     margin-left: 0px;
-    font-size: 12px; }
+    margin-right: 0px; }
+
+  .main_nav_a, .dropbtn {
+    display: inline-block;
+    color: white;
+    padding: 5px 3px;
+    font-size: 20px; }
+
+  p {
+    font-size: 14px;
+    margin-top: -5px; }
 
   .first_name_input, .last_name_input, .email_input, .activity_input {
     display: block;
@@ -384,29 +587,68 @@ button {
     margin-left: -180px; }
 
   .company_name {
-    font-size: 35px; }
+    font-size: 24px; }
 
   label {
     font-size: 18px;
-    color: #fff; }
+    color: #000; }
 
   .activity_label, .email_label {
-    margin-left: 20px; }
+    margin-left: 10px; }
 
   button {
-    margin-left: 0px; } }
-/*small mobile*/
+    margin-left: 0px; }
+
+  .foot {
+    font-size: 16px; } }
 @media screen and (max-width: 320px) {
   .container {
     width: 320px;
-    height: 120vh; }
+    height: 150vh; }
 
-  .main_nav_li, .main_nav_a, .dropbtn {
-    padding-left: 0px;
-    padding-right: 3px;
-    text-align: center;
+  .main_nav {
+    text-align: center; }
+
+  .main_header {
+    grid-column-start: 3;
+    grid-column-end: 9;
+    font-size: 16px; }
+
+  form {
+    grid-row-start: 3; }
+
+  img {
+    width: 30px;
+    height: 30px; }
+
+  .main_nav_li, .main_nav_a {
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-left: 4px; }
+
+  .dropdown-content a {
+    padding: 10px 15px;
+    display: block;
+    color: black;
+    font-size: 12px;
+    line-height: 2px; }
+
+  .main_nav_li, .main_nav_a {
+    margin-right: 5px; }
+
+  .dropbtn {
     margin-left: 0px;
-    font-size: 10px; }
+    margin-right: 0px; }
+
+  .main_nav_a, .dropbtn {
+    display: inline-block;
+    color: white;
+    padding: 5px 3px;
+    font-size: 20px; }
+
+  p {
+    font-size: 12px;
+    margin-top: -5px; }
 
   .first_name_input, .last_name_input, .email_input, .activity_input {
     display: block;
@@ -416,22 +658,25 @@ button {
     width: 250px; }
 
   .main_header {
-    font-size: 14px; }
+    font-size: 16px; }
 
   .comments_input {
     margin-left: -180px; }
 
   .company_name {
-    font-size: 25px; }
+    font-size: 22px; }
 
   label {
     font-size: 18px;
-    color: #fff; }
+    color: #000; }
 
   .activity_label, .email_label {
     margin-left: 0px; }
 
   button {
-    margin-left: 0px; } }
+    margin-left: 0px; }
+
+  .foot {
+    font-size: 14px; } }
 
 /*# sourceMappingURL=contact_us.css.map */

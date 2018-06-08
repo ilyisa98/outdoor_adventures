@@ -1,0 +1,495 @@
+/////////////////////////large laptop///////////////////////
+
+@mixin large_laptop {
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+.container{
+width: 100hh;
+height: 100vh;
+}
+
+.company_name {
+font-size: 55px; }
+
+.main_nav {
+text-align: center;
+}
+
+.main_nav_li, .main_nav_a {
+padding-left: 6px;
+padding-right: 6px;
+margin-left: 4px;}
+
+.dropdown-content a {
+font-size: 20px;
+padding: 5px 5px;
+display: block;
+color: black;
+margin-left: 0px;
+}
+
+.main_nav_li, .main_nav_a{
+margin-right: 5px;
+}
+.dropbtn{ //gallery button
+margin-left: 0px;
+margin-right: 0px;
+}
+.main_nav_a, .dropbtn {
+display: inline-block;
+color: white;
+padding: 5px 3px;
+font-size: 20px;}
+
+
+p{
+font-size: 25px;
+}
+
+//    .dropdown-content a {
+//  color: black;
+//  padding: 1px 2px;
+//  text-decoration: none;
+//  display: inline-block;
+//  text-align: left; }
+
+
+.email_input{
+display: inline-block;
+margin-left: 13px;
+}
+
+.email_label{
+margin-left: 60px;
+}
+
+.activity_input{
+display: inline-block;
+margin-left: 10px; }
+
+
+.activity_label{
+margin-left: 40px;
+}
+.comments_input{
+margin-left: -20px;
+}
+}
+
+}
+
+
+/////////////////////////laptop///////////////////////
+@mixin laptop {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+.container{
+width:1024px;
+height: 120vh;
+}
+
+.main_header{
+font-size: 18px;
+}
+    
+.main_nav {
+text-align: center;
+}
+
+//    .main_nav_ul{
+//        padding-left: 0px;
+//        margin-left: 0px;
+//    }
+
+p{
+font-size: 20px;
+}
+
+.main_nav_li, .main_nav_a {
+//  padding-left: 6px;
+//  padding-right: 6px;
+margin-left: 4px;}
+
+.dropdown-content a {
+font-size: 16px;
+padding: 2px 2px;
+display: block;
+color: black;
+margin-left: -4px;
+}
+
+.main_nav_li, .main_nav_a{
+margin-right: 5px;
+}
+.dropbtn{ //gallery button
+margin-left: 0px;
+margin-right: 0px;
+}
+.main_nav_a, .dropbtn {
+display: inline-block;
+color: white;
+padding: 5px 3px;
+font-size: 20px;}
+
+
+.email_input{
+display: inline-block;
+margin-left: 13px;
+}
+
+.email_label{
+margin-left: 60px;
+}
+
+.activity_input{
+display: inline-block;
+margin-left: 10px; }
+
+
+.activity_label{
+margin-left: 40px;
+}
+.comments_input{
+margin-left: -20px;
+}
+}
+
+}
+
+
+/////////////////////////tablet///////////////////////
+@mixin tablet {
+@media screen and (min-width: 425px) and (max-width: 768px) {
+.container{
+width:768px;
+height: 120vh;
+}
+
+.main_nav {
+text-align: center;
+}
+
+.main_header{
+grid-column-start: 3;
+grid-column-end: 9;
+font-size: 18px;
+}
+
+p{
+margin-top: -5px;
+font-size: 20px;
+}
+
+.main_nav_li, .main_nav_a {
+//  padding-left: 6px;
+//  padding-right: 6px;
+margin-left: 4px;}
+
+.dropdown-content a {
+font-size: 14px;
+color: black;
+padding: 2px 2px;
+display: block;
+margin-left: 0px;
+}
+
+.main_nav_li, .main_nav_a{
+margin-right: 5px;
+}
+.dropbtn{ //gallery button
+margin-left: 0px;
+margin-right: 0px;
+}
+.main_nav_a, .dropbtn {
+display: inline-block;
+color: white;
+padding: 5px 3px;
+font-size: 20px;}
+
+.email_input{
+display: inline-block;
+margin-left: 13px;
+}
+
+.email_label{
+margin-left: 60px;
+}
+
+.activity_input{
+display: inline-block;
+margin-left: 10px; }
+
+
+.activity_label{
+margin-left: 40px;
+}
+.comments_input{
+margin-left: -20px;
+}
+
+}
+}
+
+////////////////////////*large mobile*////////////////////////
+
+@mixin large_mobile {
+@media screen and (min-width: 375px) and (max-width: 425px) {
+.container{
+width:425px;
+height: 150vh;
+}
+
+.main_header{
+grid-column-start: 3;
+grid-column-end: 9;
+font-size: 16px;
+}
+form {
+  grid-row-start: 3; }
+
+.main_nav {
+text-align: center;
+}
+
+.main_nav_li, .main_nav_a {
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-left: 4px;}
+
+.dropdown-content a {
+padding: 10px 15px;
+display: block;
+color: black;
+font-size: 14px;
+line-height: 2px;
+}
+
+.main_nav_li, .main_nav_a{
+    margin-right: 5px;
+}
+.dropbtn{ //gallery button
+margin-left: 0px;
+margin-right: 0px;
+}
+.main_nav_a, .dropbtn {
+display: inline-block;
+color: white;
+padding: 5px 3px;
+font-size: 20px;}
+
+p{
+font-size: 14px;
+margin-top: -5px;
+
+}
+
+
+.company_name {
+font-size: 27px; }
+img{
+    width: 30px;
+    height: 30px;
+} 
+
+label{
+font-size: 25px;
+color: #000;}
+
+.first_name_input,.last_name_input, .email_input, .activity_input{
+display: block;
+margin-left: -10px; }
+
+.main_header{
+display: block;
+grid-column-start: 3;
+grid-column-end: 9;
+}
+
+.comments_input{
+margin-left: -180px;
+}
+
+.email_label, .activity_label{
+margin-left: 10px;
+}
+
+button{
+margin-left: 0px;
+}
+}
+}
+
+////////////////////////*medium mobile*////////////////////////
+@mixin medium_mobile {
+@media screen and (min-width: 320px) and (max-width: 375px) {
+.container{
+width:375px;
+height: 150vh;
+}
+.main_header{
+grid-column-start: 3;
+grid-column-end: 9;
+font-size: 16px;
+}
+form {
+  grid-row-start: 3; }
+.main_nav {
+text-align: center;
+}
+
+.main_nav_li, .main_nav_a {
+padding-left: 6px;
+padding-right: 6px;
+margin-left: 4px;}
+
+.dropdown-content a {
+padding: 10px 15px;
+display: block;
+color: black;
+font-size: 14px;
+line-height: 2px;
+}
+
+img{
+    width: 30px;
+    height: 30px;
+}    
+    
+.main_nav_li, .main_nav_a{
+margin-right: 5px;
+}
+.dropbtn{ //gallery button
+margin-left: 0px;
+margin-right: 0px;
+}
+.main_nav_a, .dropbtn {
+display: inline-block;
+color: white;
+padding: 5px 3px;
+font-size: 20px;}
+
+p{
+font-size: 14px;
+margin-top: -5px;
+}
+
+.first_name_input,.last_name_input, .email_input, .activity_input{
+display: block;
+margin-left: -10px; }
+
+.comments_input{
+margin-left: -180px;
+}
+
+.company_name {
+font-size: 24px; }
+
+label{
+font-size: 18px;
+color: #000;
+}
+
+.activity_label, .email_label{
+margin-left: 10px;
+}
+
+button{
+margin-left: 0px;
+}
+.foot{
+    font-size: 16px;
+}
+}
+}
+
+////////////////////////*small mobile*////////////////////////
+@mixin small_mobile {
+@media screen and (max-width: 320px){
+.container{
+width:320px;
+height: 150vh;
+}
+
+.main_nav {
+text-align: center;
+}
+.main_header{
+grid-column-start: 3;
+grid-column-end: 9;
+font-size: 16px;
+}
+form {
+  grid-row-start: 3; }
+
+img{
+    width: 30px;
+    height: 30px;
+}       
+    
+.main_nav_li, .main_nav_a {
+padding-left: 2px;
+padding-right: 2px;
+margin-left: 4px;}
+
+.dropdown-content a {
+padding: 10px 15px;
+display: block;
+color: black;
+font-size: 12px;
+line-height: 2px;
+}
+
+.main_nav_li, .main_nav_a{
+margin-right: 5px;
+}
+.dropbtn{ //gallery button
+margin-left: 0px;
+margin-right: 0px;
+}
+.main_nav_a, .dropbtn {
+display: inline-block;
+color: white;
+padding: 5px 3px;
+font-size: 20px;}
+
+p{
+font-size: 12px;
+margin-top: -5px;
+}
+
+
+.first_name_input,.last_name_input, .email_input, .activity_input{
+display: block;
+margin-left: -10px; }
+
+input[type=text], [type=email], select, textarea {
+width: 250px;}
+
+.main_header{
+  font-size: 16px;
+}
+
+    
+.comments_input{
+  margin-left: -180px;
+}
+
+.company_name{
+  font-size: 22px;
+}
+
+label{
+  font-size: 18px;
+  color: #000;
+}
+
+.activity_label, .email_label{
+  margin-left: 0px;
+}
+  button{
+  margin-left: 0px;
+}
+.foot{
+    font-size: 14px;
+}
+    
+}
+}

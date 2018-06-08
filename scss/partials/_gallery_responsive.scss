@@ -1,0 +1,1571 @@
+///////////////////////*large laptop*//////////////////////////
+
+@mixin large_laptop{
+@media screen and (min-width: 1025px)and (max-width: 1440px) {
+.container {
+display: grid;
+grid-template-columns: repeat(10, 1fr);
+grid-template-rows: repeat(20, 1fr);
+width: 1440px;
+height: 300vh;
+background-size: cover;
+}
+.main_img {
+display: block;
+grid-column-start: 2;
+grid-column-end: 10;
+grid-row-start: 1;
+grid-row-end: 2;
+border-bottom-left-radius: 10px;
+}
+
+.main_nav {
+text-align: center;
+}
+
+p{
+font-size: 25px;
+}
+
+.main_nav_li, .main_nav_a {
+padding-left: 6px;
+padding-right: 6px;
+margin-left: 4px;}
+
+.dropdown-content a {
+font-size: 16px;
+padding: 5px 5px;
+display: block;
+color: black;
+margin-left: 0px;
+}
+
+.main_nav_li, .main_nav_a{
+margin-right: 5px;
+}
+.dropbtn{ //gallery button
+margin-left: 0px;
+margin-right: 0px;
+}
+.main_nav_a, .dropbtn {
+display: inline-block;
+color: white;
+padding: 5px 3px;
+font-size: 20px;}
+
+.company_name {
+font-size: 55px; }
+
+
+/*    side nav*/
+.side_nav_ul {
+display: block;
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 2;
+background-color: #879F5E;
+border-radius: 10px;
+padding-left: 12px;
+}
+
+.side_nav_a {
+text-decoration: none;
+font-family: cursive;
+font-size: 14px;
+color: whitesmoke; }
+
+.gallery_heading {
+font-size: 45px;
+color: white;
+text-align: center;
+font-variant: small-caps;
+text-shadow: 2px 2px #879F5E;
+margin-bottom: 10px; }
+
+.activity_heading {
+font-size: 35px;
+color: white;
+text-align: center;
+font-variant: small-caps;
+text-shadow: 2px 2px #333333;
+margin-bottom: 10px; }
+
+
+#camp_spot_1, #camp_spot_2, #camp_spot_3, #camp_spot_4, #fish_spot_1, #fish_spot_2, #fish_spot_3, #fish_spot_4, #hike_spot_1, #hike_spot_2, #hike_spot_3, #hike_spot_4, #rock_spot_1, #rock_spot_2, #rock_spot_3, #rock_spot_4 {
+display: inline-block;
+background-color: #000;
+z-index: 1;
+width: 200px;
+height: 200px;
+}
+
+#camp_spot_1 {
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 3;
+grid-row-end: 4;
+margin-left: 45px; }
+
+#camp_spot_2 {
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 3;
+grid-row-end: 4;
+margin-left: 10px; }
+
+#camp_spot_3 {
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 4;
+grid-row-end: 5;
+margin-left: 10px;
+margin-top: 10px; }
+
+#camp_spot_4 {
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 4;
+grid-row-end: 5;
+margin-left: 10px;
+margin-top: 10px; }
+
+#fish_spot_1 {
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 5;
+grid-row-end: 6;
+margin-left: 45px; }
+
+
+#fish_spot_2 {
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 5;
+grid-row-end: 6;
+margin-left: 10px; }
+
+#fish_spot_3 {
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 6;
+grid-row-end: 7;
+margin-left: 10px;
+margin-top: 10px; }
+
+#fish_spot_4 {
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 6;
+grid-row-end: 7;
+margin-left: 10px;
+margin-top: 10px; }
+
+#hike_spot_1 {
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 7;
+grid-row-end: 8;
+margin-left: 45px; }
+
+
+#hike_spot_2 {
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 7;
+grid-row-end: 8;
+margin-left: 10px; }
+
+
+#hike_spot_3 {
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 7;
+grid-row-end: 8;
+margin-left: 10px;
+margin-top: 10px; }
+
+#hike_spot_4 {
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 7;
+grid-row-end: 8;
+margin-left: 10px;
+margin-top: 10px; }
+
+#rock_spot_1 {
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 8;
+grid-row-end: 9;
+margin-left: 45px; }
+
+#rock_spot_2 {
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 8;
+grid-row-end: 9;
+margin-left: 10px; }
+
+#rock_spot_3 {
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 8;
+grid-row-end: 9;
+margin-left: 10px;
+margin-top: 10px; }
+
+#rock_spot_4 {
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 8;
+grid-row-end: 9;
+margin-left: 10px;
+margin-top: 10px; }
+
+
+}
+}
+
+
+//////////////////////////*laptop*//////////////////////////
+@mixin laptop{
+@media screen and (min-width: 769px)and (max-width: 1024px) {
+.container {
+display: grid;
+grid-template-columns: repeat(10, 1fr);
+grid-template-rows: repeat(20, 1fr);
+width: 1024px;
+height: 260vh;
+background-size: cover;
+}
+.main_img {
+display: block;
+grid-column-start: 2;
+grid-column-end: 10;
+grid-row-start: 1;
+grid-row-end: 2;
+border-bottom-left-radius: 10px;
+}
+
+.main_nav {
+text-align: center;
+}
+
+p{
+font-size: 20px;
+}
+
+.main_nav_li, .main_nav_a {
+padding-left: 6px;
+padding-right: 6px;
+margin-left: 4px;}
+
+.dropdown-content a {
+font-size: 16px;
+padding: 2px 2px;
+display: block;
+color: black;
+margin-left: -10px;
+}
+
+.main_nav_li, .main_nav_a{
+margin-right: 5px;
+}
+.dropbtn{ //gallery button
+margin-left: 0px;
+margin-right: 0px;
+}
+.main_nav_a, .dropbtn {
+display: inline-block;
+color: white;
+padding: 5px 3px;
+font-size: 20px;}
+
+//.company_name {
+//  font-size: 35px; }
+
+/*    side nav*/
+.side_nav_ul {
+display: block;
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 2;
+background-color: #879F5E;
+border-radius: 10px;
+padding-left: 12px;
+}
+
+.side_nav_a {
+text-decoration: none;
+font-family: cursive;
+font-size: 10px;
+color: whitesmoke; }
+
+.gallery_heading {
+font-size: 35px;
+color: white;
+text-align: center;
+font-variant: small-caps;
+text-shadow: 2px 2px #879F5E;
+margin-bottom: 10px; }
+
+.activity_heading {
+font-size: 30px;
+color: white;
+text-align: center;
+font-variant: small-caps;
+text-shadow: 2px 2px #333333;
+margin-bottom: 10px; }
+
+#camp_spot_1, #camp_spot_2, #camp_spot_3, #camp_spot_4, #fish_spot_1, #fish_spot_2, #fish_spot_3, #fish_spot_4, #hike_spot_1, #hike_spot_2, #hike_spot_3, #hike_spot_4, #rock_spot_1, #rock_spot_2, #rock_spot_3, #rock_spot_4 {
+display: inline-block;
+background-color: #000;
+z-index: 1;
+width: 150px;
+height: 150px;
+}
+
+#camp_spot_1 {
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 3;
+grid-row-end: 4;
+margin-left: 35px; }
+
+#camp_spot_2 {
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 3;
+grid-row-end: 4;
+margin-left: 10px; }
+
+#camp_spot_3 {
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 4;
+grid-row-end: 5;
+margin-left: 10px;
+margin-top: 10px; }
+
+#camp_spot_4 {
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 4;
+grid-row-end: 5;
+margin-left: 10px;
+margin-top: 10px; }
+
+#fish_spot_1 {
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 5;
+grid-row-end: 6;
+margin-left: 35px; }
+
+
+#fish_spot_2 {
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 5;
+grid-row-end: 6;
+margin-left: 10px; }
+
+#fish_spot_3 {
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 6;
+grid-row-end: 7;
+margin-left: 10px;
+margin-top: 10px; }
+
+#fish_spot_4 {
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 6;
+grid-row-end: 7;
+margin-left: 10px;
+margin-top: 10px; }
+
+#hike_spot_1 {
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 7;
+grid-row-end: 8;
+margin-left: 35px; }
+
+
+#hike_spot_2 {
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 7;
+grid-row-end: 8;
+margin-left: 10px; }
+
+
+#hike_spot_3 {
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 7;
+grid-row-end: 8;
+margin-left: 10px;
+margin-top: 10px; }
+
+#hike_spot_4 {
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 7;
+grid-row-end: 8;
+margin-left: 10px;
+margin-top: 10px; }
+
+#rock_spot_1 {
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 8;
+grid-row-end: 9;
+margin-left: 35px; }
+
+#rock_spot_2 {
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 8;
+grid-row-end: 9;
+margin-left: 10px; }
+
+#rock_spot_3 {
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 8;
+grid-row-end: 9;
+margin-left: 10px;
+margin-top: 10px; }
+
+#rock_spot_4 {
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 8;
+grid-row-end: 9;
+margin-left: 10px;
+margin-top: 10px; }
+
+}
+}
+
+
+/*tablet*/
+@mixin tablet{
+@media screen and (min-width:425px)and (max-width: 768px) {
+.container {
+display: grid;
+grid-template-columns: repeat(10, 1fr);
+grid-template-rows: repeat(20, 1fr);
+width: 768px;
+height: 200vh;
+background-size: cover;
+}
+.main_img {
+display: block;
+grid-column-start: 2;
+grid-column-end: 10;
+grid-row-start: 1;
+grid-row-end: 2;
+border-bottom-left-radius: 10px;
+}
+
+.main_nav {
+text-align: center;
+}
+
+.main_nav_li, .main_nav_a {
+display: inline-block;
+font-size: 14px;
+//  padding-left: 0px;
+//  padding-right: 0px;
+margin-left: 4px;
+}
+
+p{
+margin-top: -5px;
+font-size: 20px;
+}
+
+.dropdown-content a {
+font-size: 14px;
+color: black;
+padding: 1px 2px;
+display: block;
+margin-left: 0px;
+}
+
+.main_nav_li, .main_nav_a{
+margin-right: 5px;
+}
+.dropbtn{ //gallery button
+margin-left: 0px;
+margin-right: 0px;
+}
+.main_nav_a, .dropbtn {
+display: inline-block;
+color: white;
+padding: 5px 3px;
+font-size: 20px;}
+
+
+/*    side nav*/
+.side_nav_ul {
+display: block;
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 2;
+background-color: #879F5E;
+border-radius: 10px;
+padding-left: 12px;
+}
+
+.side_nav_a {
+text-decoration: none;
+font-family: cursive;
+font-size: 10px;
+color: whitesmoke; }
+
+.gallery_heading {
+font-size: 35px;
+color: white;
+text-align: center;
+font-variant: small-caps;
+text-shadow: 2px 2px #879F5E;
+margin-bottom: 10px; }
+
+.activity_heading {
+font-size: 30px;
+color: white;
+text-align: center;
+font-variant: small-caps;
+text-shadow: 2px 2px #333333;
+margin-bottom: 10px; }
+
+#camp_spot_1, #camp_spot_2, #camp_spot_3, #camp_spot_4, #fish_spot_1, #fish_spot_2, #fish_spot_3, #fish_spot_4, #hike_spot_1, #hike_spot_2, #hike_spot_3, #hike_spot_4, #rock_spot_1, #rock_spot_2, #rock_spot_3, #rock_spot_4 {
+display: inline-block;
+background-color: #000;
+z-index: 1;
+width: 100px;
+height: 100px;
+}
+
+#camp_spot_1 {
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 3;
+grid-row-end: 4;
+margin-left: 35px; }
+
+#camp_spot_2 {
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 3;
+grid-row-end: 4;
+margin-left: 10px; }
+
+#camp_spot_3 {
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 4;
+grid-row-end: 5;
+margin-left: 35px;
+margin-top: 10px; }
+
+#camp_spot_4 {
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 4;
+grid-row-end: 5;
+margin-left: 10px;
+margin-top: 10px; }
+
+#fish_spot_1 {
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 5;
+grid-row-end: 6;
+margin-left: 35px; }
+
+
+#fish_spot_2 {
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 5;
+grid-row-end: 6;
+margin-left: 10px; }
+
+#fish_spot_3 {
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 6;
+grid-row-end: 7;
+margin-left: 35px;
+margin-top: 10px; }
+
+#fish_spot_4 {
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 6;
+grid-row-end: 7;
+margin-left: 10px;
+margin-top: 10px; }
+
+#hike_spot_1 {
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 7;
+grid-row-end: 8;
+margin-left: 35px; }
+
+
+#hike_spot_2 {
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 7;
+grid-row-end: 8;
+margin-left: 10px; }
+
+
+#hike_spot_3 {
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 7;
+grid-row-end: 8;
+margin-left: 35px;
+margin-top: 10px; }
+
+#hike_spot_4 {
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 7;
+grid-row-end: 8;
+margin-left: 10px;
+margin-top: 10px; }
+
+#rock_spot_1 {
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 8;
+grid-row-end: 9;
+margin-left: 35px; }
+
+#rock_spot_2 {
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 8;
+grid-row-end: 9;
+margin-left: 10px; }
+
+#rock_spot_3 {
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 8;
+grid-row-end: 9;
+margin-left: 35px;
+margin-top: 10px; }
+
+#rock_spot_4 {
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 8;
+grid-row-end: 9;
+margin-left: 10px;
+margin-top: 10px; }
+}
+}
+
+
+////////////////////*large mobile*//////////////////////////
+@mixin large_mobile{
+@media screen and (min-width:375px)and (max-width: 425px) {
+.container {
+display: grid;
+grid-template-columns: repeat(10, 1fr);
+grid-template-rows: repeat(20, 1fr);
+width: 425px;
+height: 260vh;
+background-size: cover;
+}
+.main_img {
+display: block;
+grid-column-start: 2;
+grid-column-end: 10;
+grid-row-start: 1;
+grid-row-end: 2;
+border-bottom-left-radius: 10px;
+}
+
+.main_nav {
+text-align: center;
+}
+
+p{
+margin-top: -5px;
+font-size: 15px;
+}
+
+    .main_nav_li, .main_nav_a {
+  padding-left: 2px;
+  padding-right: 2px;
+    margin-left: 4px;}
+
+.dropdown-content a {
+padding: 10px 15px;
+display: block;
+color: black;
+font-size: 14px;
+line-height: 2px;
+}
+.main_nav_li, .main_nav_a{
+margin-right: 5px;
+}
+.dropbtn{ //gallery button
+margin-left: 0px;
+margin-right: 0px;
+}
+.main_nav_a, .dropbtn {
+display: inline-block;
+color: white;
+padding: 3px 3px;
+font-size: 20px;}
+
+
+.company_name {
+font-size: 25px; }
+
+/*    side nav*/
+.side_nav_ul {
+display: block;
+grid-column-start: 1;
+grid-column-end: 4;
+grid-row-start: 2;
+background-color: #879F5E;
+border-radius: 10px;
+padding-left: 12px;
+}
+
+.side_nav_a {
+text-decoration: none;
+font-family: cursive;
+font-size: 10px;
+color: whitesmoke; }
+
+.gallery_heading {
+font-size: 35px;
+color: white;
+text-align: center;
+font-variant: small-caps;
+text-shadow: 2px 2px #879F5E;
+margin-left: 35px;
+margin-bottom: 10px; }
+
+.activity_heading {
+font-size: 30px;
+color: white;
+text-align: center;
+margin-left: 35px;
+font-variant: small-caps;
+text-shadow: 2px 2px #333333;
+margin-bottom: 10px; }
+
+#camp_spot_1 {
+display: inline-block;
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 3;
+grid-row-end: 4;
+background-color: #000;
+z-index: 1;
+width: 100px;
+height: 100px;
+margin-left: 55px; }
+
+#camp_spot_2 {
+display: inline-block;
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 3;
+grid-row-end: 4;
+background-color: #000;
+z-index: 1;
+width: 100px;
+height: 100px;
+margin-left: 10px; }
+
+#camp_spot_3 {
+display: inline-block;
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 4;
+grid-row-end: 5;
+background-color: #000;
+z-index: 1;
+width: 100px;
+height: 100px;
+margin-left: 55px;
+margin-top: 10px; }
+
+#camp_spot_4 {
+display: inline-block;
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 4;
+grid-row-end: 5;
+background-color: #000;
+z-index: 1;
+width: 100px;
+height: 100px;
+margin-left: 10px;
+margin-top: 10px; }
+
+#fish_spot_1 {
+display: inline-block;
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 5;
+grid-row-end: 6;
+background-color: #000;
+z-index: 1;
+width: 100px;
+height: 100px;
+margin-left: 55px; }
+
+
+#fish_spot_2 {
+display: inline-block;
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 5;
+grid-row-end: 6;
+background-color: #000;
+z-index: 1;
+width: 100px;
+height: 100px;
+margin-left: 10px; }
+
+#fish_spot_3 {
+display: inline-block;
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 6;
+grid-row-end: 7;
+background-color: #000;
+z-index: 1;
+width: 100px;
+height: 100px;
+margin-left: 55px;
+margin-top: 10px; }
+
+#fish_spot_4 {
+display: inline-block;
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 6;
+grid-row-end: 7;
+background-color: #000;
+z-index: 1;
+width: 100px;
+height: 100px;
+margin-left: 10px;
+margin-top: 10px; }
+
+#hike_spot_1 {
+display: inline-block;
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 7;
+grid-row-end: 8;
+background-color: #000;
+z-index: 1;
+width: 100px;
+height: 100px;
+margin-left: 55px; }
+
+
+#hike_spot_2 {
+display: inline-block;
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 7;
+grid-row-end: 8;
+background-color: #000;
+z-index: 1;
+width: 100px;
+height: 100px;
+margin-left: 10px; }
+
+
+#hike_spot_3 {
+display: inline-block;
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 7;
+grid-row-end: 8;
+background-color: #000;
+z-index: 1;
+width: 100px;
+height: 100px;
+margin-left: 55px;
+margin-top: 10px; }
+
+#hike_spot_4 {
+display: inline-block;
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 7;
+grid-row-end: 8;
+background-color: #000;
+z-index: 1;
+width: 100px;
+height: 100px;
+margin-left: 10px;
+margin-top: 10px; }
+
+#rock_spot_1 {
+display: inline-block;
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 8;
+grid-row-end: 9;
+background-color: #000;
+z-index: 1;
+width: 100px;
+height: 100px;
+margin-left: 55px; }
+
+#rock_spot_2 {
+display: inline-block;
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 8;
+grid-row-end: 9;
+background-color: #000;
+z-index: 1;
+width: 100px;
+height: 100px;
+margin-left: 10px; }
+
+#rock_spot_3 {
+display: inline-block;
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 8;
+grid-row-end: 9;
+background-color: #000;
+z-index: 1;
+width: 100px;
+height: 100px;
+margin-left: 55px;
+margin-top: 10px; }
+
+#rock_spot_4 {
+display: inline-block;
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 8;
+grid-row-end: 9;
+background-color: #000;
+z-index: 1;
+width: 100px;
+height: 100px;
+margin-left: 10px;
+margin-top: 10px; }
+
+}
+}
+
+
+///////////////////////*medium mobile*////////////////////////////
+
+@mixin medium_mobile{
+@media screen and (min-width:320px)and (max-width: 375px) {
+.container {
+display: grid;
+grid-template-columns: repeat(10, 1fr);
+grid-template-rows: repeat(20, 1fr);
+width: 375px;
+height: 240vh;
+background-size: cover;
+}
+.main_img {
+display: block;
+grid-column-start: 2;
+grid-column-end: 10;
+grid-row-start: 1;
+grid-row-end: 2;
+border-bottom-left-radius: 10px;
+}
+
+.main_nav_li, .main_nav_a {
+padding-left: 2px;
+padding-right: 2px;
+margin-left: 2px;}
+
+.dropdown-content a {
+padding: 10px 15px;
+display: block;
+color: black;
+font-size: 14px;
+line-height: 2px;
+}
+
+.main_nav_li, .main_nav_a{
+margin-right: 5px;
+}
+.dropbtn{ //gallery button
+margin-left: 0px;
+margin-right: 0px;
+}
+.main_nav_a, .dropbtn {
+display: inline-block;
+color: white;
+padding: 3px 3px;
+font-size: 20px;}
+
+p{
+margin-top: -5px;
+font-size: 15px;
+}
+
+.company_name {
+font-size: 24px; }
+
+/*    side nav*/
+.side_nav_ul {
+display: block;
+grid-column-start: 1;
+grid-column-end: 4;
+grid-row-start: 2;
+background-color: #879F5E;
+border-radius: 10px;
+padding-left: 12px;
+}
+
+.side_nav_a {
+text-decoration: none;
+font-family: cursive;
+font-size: 10px;
+color: whitesmoke; }
+
+.gallery_heading {
+font-size: 35px;
+color: white;
+text-align: center;
+font-variant: small-caps;
+text-shadow: 2px 2px #879F5E;
+margin-bottom: 10px; }
+
+.activity_heading {
+font-size: 30px;
+color: white;
+text-align: center;
+font-variant: small-caps;
+text-shadow: 2px 2px #333333;
+margin-bottom: 10px; }
+
+#camp_spot_1 {
+display: inline-block;
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 3;
+grid-row-end: 4;
+background-color: #000;
+z-index: 1;
+width: 90px;
+height: 90px;
+margin-left: 40px; }
+
+#camp_spot_2 {
+display: inline-block;
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 3;
+grid-row-end: 4;
+background-color: #000;
+z-index: 1;
+width: 90px;
+height: 90px;
+margin-left: 10px; }
+
+#camp_spot_3 {
+display: inline-block;
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 4;
+grid-row-end: 5;
+background-color: #000;
+z-index: 1;
+width: 90px;
+height: 90px;
+margin-left: 40px;
+margin-top: 10px; }
+
+#camp_spot_4 {
+display: inline-block;
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 4;
+grid-row-end: 5;
+background-color: #000;
+z-index: 1;
+width: 90px;
+height: 90px;
+margin-left: 10px;
+margin-top: 10px; }
+
+#fish_spot_1 {
+display: inline-block;
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 5;
+grid-row-end: 6;
+background-color: #000;
+z-index: 1;
+width: 90px;
+height: 90px;
+margin-left: 40px; }
+
+
+#fish_spot_2 {
+display: inline-block;
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 5;
+grid-row-end: 6;
+background-color: #000;
+z-index: 1;
+width: 90px;
+height: 90px;
+margin-left: 10px; }
+
+#fish_spot_3 {
+display: inline-block;
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 6;
+grid-row-end: 7;
+background-color: #000;
+z-index: 1;
+width: 90px;
+height: 90px;
+margin-left: 40px;
+margin-top: 10px; }
+
+#fish_spot_4 {
+display: inline-block;
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 6;
+grid-row-end: 7;
+background-color: #000;
+z-index: 1;
+width: 90px;
+height: 90px;
+margin-left: 10px;
+margin-top: 10px; }
+
+#hike_spot_1 {
+display: inline-block;
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 7;
+grid-row-end: 8;
+background-color: #000;
+z-index: 1;
+width: 90px;
+height: 90px;
+margin-left: 40px; }
+
+
+#hike_spot_2 {
+display: inline-block;
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 7;
+grid-row-end: 8;
+background-color: #000;
+z-index: 1;
+width: 90px;
+height: 90px;
+margin-left: 10px; }
+
+
+#hike_spot_3 {
+display: inline-block;
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 7;
+grid-row-end: 8;
+background-color: #000;
+z-index: 1;
+width: 90px;
+height: 90px;
+margin-left: 40px;
+margin-top: 10px; }
+
+#hike_spot_4 {
+display: inline-block;
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 7;
+grid-row-end: 8;
+background-color: #000;
+z-index: 1;
+width: 90px;
+height: 90px;
+margin-left: 10px;
+margin-top: 10px; }
+
+#rock_spot_1 {
+display: inline-block;
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 8;
+grid-row-end: 9;
+background-color: #000;
+z-index: 1;
+width: 90px;
+height: 90px;
+margin-left: 40px; }
+
+#rock_spot_2 {
+display: inline-block;
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 8;
+grid-row-end: 9;
+background-color: #000;
+z-index: 1;
+width: 90px;
+height: 90px;
+margin-left: 10px; }
+
+#rock_spot_3 {
+display: inline-block;
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 8;
+grid-row-end: 9;
+background-color: #000;
+z-index: 1;
+width: 90px;
+height: 90px;
+margin-left: 40px;
+margin-top: 10px; }
+
+#rock_spot_4 {
+display: inline-block;
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 8;
+grid-row-end: 9;
+background-color: #000;
+z-index: 1;
+width: 90px;
+height: 90px;
+margin-left: 10px;
+margin-top: 10px; }
+
+}
+
+}
+
+
+////////////////////////////small mobile///////////////////////////////
+@mixin small_mobile{
+@media screen and (max-width: 320px) {
+.container {
+display: grid;
+grid-template-columns: repeat(10, 1fr);
+grid-template-rows: repeat(20, 1fr);
+width: 325px;
+height: 220vh;
+background-size: cover;
+}
+.main_img {
+display: block;
+grid-column-start: 2;
+grid-column-end: 10;
+grid-row-start: 1;
+grid-row-end: 2;
+border-bottom-left-radius: 10px;
+}
+
+.main_nav_li, .main_nav_a {
+padding-left: 1px;
+padding-right: 1px;
+margin-left: 2px;}
+
+.dropdown-content a {
+padding: 10px 15px;
+display: block;
+color: black;
+font-size: 12px;
+line-height: 2px;
+}
+
+.main_nav_li, .main_nav_a{
+margin-right: 5px;
+}
+.dropbtn{ //gallery button
+margin-left: 0px;
+margin-right: 0px;
+}
+.main_nav_a, .dropbtn {
+display: inline-block;
+color: white;
+padding: 3px 3px;
+font-size: 20px;}
+
+p{
+margin-top: -5px;
+font-size: 14px;
+}
+
+.company_name {
+font-size: 20px; }
+
+/*    side nav*/
+.side_nav_ul {
+display: block;
+grid-column-start: 1;
+grid-column-end: 4;
+grid-row-start: 2;
+background-color: #879F5E;
+border-radius: 10px;
+padding-left: 12px;
+}
+
+.side_nav_a {
+text-decoration: none;
+font-family: cursive;
+font-size: 10px;
+color: whitesmoke; }
+
+.gallery_heading {
+font-size: 19px;
+color: white;
+text-align: center;
+font-variant: small-caps;
+text-shadow: 2px 2px #879F5E;
+margin-bottom: 10px;
+margin-left: 30px;}
+
+.activity_heading {
+font-size: 20px;
+color: white;
+text-align: center;
+font-variant: small-caps;
+text-shadow: 2px 2px #333333;
+margin-bottom: 10px;
+margin-left: 30px;}
+
+#camp_spot_1 {
+display: inline-block;
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 3;
+grid-row-end: 4;
+background-color: #000;
+z-index: 1;
+width: 80px;
+height: 80px;
+margin-left: 35px; }
+
+#camp_spot_2 {
+display: inline-block;
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 3;
+grid-row-end: 4;
+background-color: #000;
+z-index: 1;
+width: 80px;
+height: 80px;
+margin-left: 10px; }
+
+#camp_spot_3 {
+display: inline-block;
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 4;
+grid-row-end: 5;
+background-color: #000;
+z-index: 1;
+width: 80px;
+height: 80px;
+margin-left: 35px;
+margin-top: 10px; }
+
+#camp_spot_4 {
+display: inline-block;
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 4;
+grid-row-end: 5;
+background-color: #000;
+z-index: 1;
+width: 80px;
+height: 80px;
+margin-left: 10px;
+margin-top: 10px; }
+
+#fish_spot_1 {
+display: inline-block;
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 5;
+grid-row-end: 6;
+background-color: #000;
+z-index: 1;
+width: 80px;
+height: 80px;
+margin-left: 35px; }
+
+
+#fish_spot_2 {
+display: inline-block;
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 5;
+grid-row-end: 6;
+background-color: #000;
+z-index: 1;
+width: 80px;
+height: 80px;
+margin-left: 10px; }
+
+#fish_spot_3 {
+display: inline-block;
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 6;
+grid-row-end: 7;
+background-color: #000;
+z-index: 1;
+width: 80px;
+height: 80px;
+margin-left: 35px;
+margin-top: 10px; }
+
+#fish_spot_4 {
+display: inline-block;
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 6;
+grid-row-end: 7;
+background-color: #000;
+z-index: 1;
+width: 80px;
+height: 80px;
+margin-left: 10px;
+margin-top: 10px; }
+
+#hike_spot_1 {
+display: inline-block;
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 7;
+grid-row-end: 8;
+background-color: #000;
+z-index: 1;
+width: 80px;
+height: 80px;
+margin-left: 35px; }
+
+
+#hike_spot_2 {
+display: inline-block;
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 7;
+grid-row-end: 8;
+background-color: #000;
+z-index: 1;
+width: 80px;
+height: 80px;
+margin-left: 10px; }
+
+
+#hike_spot_3 {
+display: inline-block;
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 7;
+grid-row-end: 8;
+background-color: #000;
+z-index: 1;
+width: 80px;
+height: 80px;
+margin-left: 35px;
+margin-top: 10px; }
+
+#hike_spot_4 {
+display: inline-block;
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 7;
+grid-row-end: 8;
+background-color: #000;
+z-index: 1;
+width: 80px;
+height: 80px;
+margin-left: 10px;
+margin-top: 10px; }
+
+#rock_spot_1 {
+display: inline-block;
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 8;
+grid-row-end: 9;
+background-color: #000;
+z-index: 1;
+width: 80px;
+height: 80px;
+margin-left: 35px; }
+
+#rock_spot_2 {
+display: inline-block;
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 8;
+grid-row-end: 9;
+background-color: #000;
+z-index: 1;
+width: 80px;
+height: 80px;
+margin-left: 10px; }
+
+#rock_spot_3 {
+display: inline-block;
+grid-column-start: 4;
+grid-column-end: 6;
+grid-row-start: 8;
+grid-row-end: 9;
+background-color: #000;
+z-index: 1;
+width: 80px;
+height: 80px;
+margin-left: 35px;
+margin-top: 10px; }
+
+#rock_spot_4 {
+display: inline-block;
+grid-column-start: 6;
+grid-column-end: 8;
+grid-row-start: 8;
+grid-row-end: 9;
+background-color: #000;
+z-index: 1;
+width: 80px;
+height: 80px;
+margin-left: 10px;
+margin-top: 10px; }
+
+}
+
+}

@@ -1,0 +1,340 @@
+@import "partials/index_responsive.scss";
+
+//fonts
+
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+
+.container {
+  width: 100hh;
+  height: 240vh;
+  background-color: transparent;
+  background-blend-mode: color-burn;
+  display: grid;
+  grid-template-rows: repeat(20, 1fr);
+  grid-template-columns: repeat(10, 1fr);
+  background-image: url(../images/blurred.jpg);
+  background-size: cover; }
+
+/*nav bar*/
+nav {
+//  position: static;
+  padding: 3px;
+  text-align: center;
+  grid-column-start: 3;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: block;
+  background-color: transparent;
+  border-radius: 10px;
+  z-index: 1; }
+
+
+li, a {
+  display: inline-block;
+  text-decoration: none;
+  color: #333333;
+  font-size: 20px;
+  font-family: cursive;
+//  padding-left: 30px;
+//  padding-right: 30px;
+  text-align: center;
+  margin-left: 16px; 
+}
+
+
+
+a:hover {
+  color: white;
+  border-radius: 8px; }
+
+a:active {
+  background-color: #4CAF50;
+  color: white; }
+
+p{
+    margin-top: -10px;
+    margin-bottom: -5px;
+    color: black;
+    font-family: 'Lobster', cursive;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+  border-radius: 10px; }
+
+a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none; }
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #BE5731; }
+
+li.dropdown {
+  display: inline-block; }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 10px; }
+
+.dropdown-content a{
+  color: black;
+  font-size: 15px; 
+  padding: 1px 1px;
+  margin-left: 0px; 
+  text-decoration: none;
+  display: block;
+  text-align: left; }
+
+.dropdown-content a:hover {
+  background-color: #BE5731; 
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; }
+
+.company_name {
+  font-size: 55px;
+  color: white;
+  font-family: 'Kaushan Script', cursive;
+  text-align: center;
+  font-variant: small-caps;
+  text-shadow: 2px 2px #ff0000; }
+
+/*main img*/
+.main_img {
+  display: inline-grid;
+  grid-column-start: 2;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  border-radius: 10px; }
+
+/*outdoor activities*/
+
+.outdoor_activities {
+  display: block;
+  grid-column-start: 1;
+  grid-column-end: 11;
+  grid-row-start: 5;
+  grid-row-end: 10; }
+
+/*styling of heading*/
+#activities_heading {
+  display: block;
+  grid-column-start: 4;
+  grid-column-end: 8;
+  grid-row-start: 7;
+  font-size: 40px;
+  color: #333333;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  font-variant: small-caps;
+  text-shadow: 2px 2px #fff; }
+
+/*activity descriptions*/
+.desc {
+  text-align: center;
+  font-family: fantasy;
+  font-size: 16px;
+  color: black; }
+
+/*hiking image*/
+
+.gallery_hiking {
+  display: inline-block;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 8;
+  grid-row-end: 9;
+  width: 250px;
+  height: 250px;
+  margin-left: 35px; }
+
+.hike_img {
+  height: 250px;
+  width: 250px;
+  z-index: 100; }
+
+.hike_img:hover {
+  transition: all 2s ease-in-out;
+  transform: rotate(360deg) scale(1); }
+
+#hiking_head:focus {
+  border: 2px solid red; }
+
+.hike:focus {
+  border: 2px solid green; }
+
+/*all anchor borders*/
+a * {
+  border-radius: 10px; }
+
+
+/*camping image*/
+.gallery_camping {
+  display: inline-block;
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 8;
+  grid-row-end: 9;
+  width: 250px;
+  height: 250px;
+  margin-left: 60px; }
+
+.camp_img {
+  height: 250px;
+  width: 250px; }
+
+.camp_img:hover {
+  transition: all 2s ease-in-out;
+  transform: rotate(-360deg) scale(1); }
+
+/*fishing image*/
+.gallery_fishing {
+  display: inline-block;
+  grid-column-start: 7;
+  grid-column-end: 8;
+  grid-row-start: 8;
+  grid-row-end: 9;
+  width: 250px;
+  height: 250px;
+  margin-left: 60px; }
+
+.fish_img {
+  height: 250px;
+  width: 250px; }
+
+.fish_img:hover {
+  transition: all 2s ease-in-out;
+  transform: rotate(360deg) scale(1); }
+
+/*rock climbing image*/
+.gallery_rock {
+  display: inline-block;
+  grid-column-start: 8;
+  grid-column-end: 9;
+  grid-row-start: 8;
+  grid-row-end: 9;
+  width: 250px;
+  height: 250px;
+  margin-left: 65px; }
+
+.rock_img {
+  height: 250px;
+  width: 250px; }
+
+.rock_img:hover {
+  transition: all 2s ease-in-out;
+  transform: rotate(-360deg) scale(1); }
+
+
+/*descriptions*/
+.activities_desc {
+  display: block;
+  grid-column-start: 1;
+  grid-column-end: 11;
+  grid-row-start: 11;
+  grid-row-end: 15; 
+}
+
+#hiking_desc, #camping_desc, #fishing_desc, #rock_desc{
+      display: inline-block;
+      width: 250px;
+      height: 250px;
+      margin-left: 60px;
+      color: #fff;
+      overflow: visible;
+      text-align: center;
+      border: 1px solid black;
+      border-radius: 10px;
+      font-size: 12px;
+    
+}
+
+#hiking_desc {
+  margin-top: 15px;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 13;
+  grid-row-end: 14;
+  background-image: url(../images/hikers.jpg);
+  background-position: left top; }
+
+#camping_desc {
+  margin-top: 15px;
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 13;
+  grid-row-end: 14;
+  background-image: url(../images/camping.jpg); }
+
+#fishing_desc {
+  margin-top: 15px;
+  grid-column-start: 7;
+  grid-column-end: 8;
+  grid-row-start: 13;
+  grid-row-end: 14;
+  background-image: url(../images/fishing.jpg); }
+
+#rock_desc {
+  margin-top: 15px;
+  grid-column-start: 8;
+  grid-column-end: 9;
+  grid-row-start: 13;
+  grid-row-end: 14;
+  background-image: url(../images/rock_climb.jpeg); }
+
+footer {
+  display: inline-block;
+  margin-top: 20px;
+  grid-column-start: 1;
+  grid-column-end: 11;
+  grid-row-start: 20;
+  grid-row-end: 21;
+  border-radius: 10px;
+  z-index: 2;
+  position: relative; 
+background-color: transparent;
+border: 1px solid black;}
+
+.foot{
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+}
+
+
+
+
+
+
+/*responsiveness*/
+
+@include large_laptop;
+
+@include laptop;
+
+@include tablet;
+
+@include large_mobile;
+
+@include medium_mobile;
+
+@include small_mobile;
+
+
