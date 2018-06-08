@@ -669,52 +669,40 @@ grid-row-start: 8;
 grid-row-end: 15; }
 
 #hiking_desc {
-display: inline-block;
-margin-top: 15px;
 grid-column-start: 5;
 grid-column-end: 6;
 grid-row-start: 8;
 grid-row-end: 9;
-width: 200px;
-height: 200px;
-font-size: 12px;
 margin-left: 105px; }
 
 #camping_desc {
-display: inline-block;
-margin-top: 15px;
 grid-column-start: 5;
 grid-column-end: 6;
 grid-row-start: 9;
 grid-row-end: 10;
-width: 200px;
-height: 200px;
-font-size: 12px;
 margin-left: 105px; }
 
 #fishing_desc {
-display: inline-block;
-margin-top: 15px;
 grid-column-start: 5;
 grid-column-end: 6;
 grid-row-start: 11;
 grid-row-end: 12;
-width: 200px;
-height: 200px;
-font-size: 12px;
 margin-left: 105px; }
 
 #rock_desc {
-display: inline-block;
-margin-top: 15px;
 grid-column-start: 5;
 grid-column-end: 6;
 grid-row-start: 12;
 grid-row-end: 13;
-width: 200px;
-height: 200px;
-font-size: 12px;
 margin-left: 105px; }
+    
+   #hiking_desc, #camping_desc, #fishing_desc, #rock_desc{
+            display: inline-block;
+            margin-top: 15px;
+            width: 200px;
+            height: 200px;
+            font-size: 11px;
+    }
 
 footer {
 padding: 0px;
@@ -864,52 +852,40 @@ grid-row-start: 7;
 grid-row-end: 15; }
 
 #hiking_desc {
-display: inline-block;
-margin-top: 15px;
 grid-column-start: 5;
 grid-column-end: 6;
 grid-row-start: 8;
 grid-row-end: 9;
-width: 200px;
-height: 200px;
-font-size: 12px;
 margin-left: 80px; }
 
 #camping_desc {
-display: inline-block;
-margin-top: 15px;
 grid-column-start: 5;
 grid-column-end: 6;
 grid-row-start: 9;
 grid-row-end: 10;
-width: 200px;
-height: 200px;
-font-size: 12px;
 margin-left: 80px; }
 
 #fishing_desc {
-display: inline-block;
-margin-top: 15px;
 grid-column-start: 5;
 grid-column-end: 6;
 grid-row-start: 11;
 grid-row-end: 12;
-width: 200px;
-height: 200px;
-font-size: 12px;
 margin-left: 80px; }
 
 #rock_desc {
-display: inline-block;
-margin-top: 15px;
 grid-column-start: 5;
 grid-column-end: 6;
 grid-row-start: 12;
 grid-row-end: 13;
-width: 200px;
-height: 200px;
-font-size: 12px;
 margin-left: 80px; }
+    
+#hiking_desc, #camping_desc, #fishing_desc, #rock_desc{
+    display: inline-block;
+    margin-top: 15px;
+    width: 200px;
+    height: 200px;
+    font-size: 11px;
+    }
 
 footer {
 padding: 0px;
@@ -1065,52 +1041,40 @@ grid-row-start: 7;
 grid-row-end: 15; }
 
 #hiking_desc {
-display: inline-block;
-margin-top: 15px;
 grid-column-start: 5;
 grid-column-end: 6;
 grid-row-start: 8;
 grid-row-end: 9;
-width: 200px;
-height: 200px;
-font-size: 12px;
 margin-left: 60px; }
 
 #camping_desc {
-display: inline-block;
-margin-top: 15px;
 grid-column-start: 5;
 grid-column-end: 6;
 grid-row-start: 9;
 grid-row-end: 10;
-width: 200px;
-height: 200px;
-font-size: 12px;
 margin-left: 60px; }
 
 #fishing_desc {
-display: inline-block;
-margin-top: 15px;
 grid-column-start: 5;
 grid-column-end: 6;
 grid-row-start: 11;
 grid-row-end: 12;
-width: 200px;
-height: 200px;
-font-size: 12px;
 margin-left: 60px; }
 
 #rock_desc {
-display: inline-block;
-margin-top: 15px;
 grid-column-start: 5;
 grid-column-end: 6;
 grid-row-start: 12;
 grid-row-end: 13;
-width: 200px;
-height: 200px;
-font-size: 12px;
 margin-left: 60px; }
+    
+#hiking_desc, #camping_desc, #fishing_desc, #rock_desc{
+    display: inline-block;
+    margin-top: 15px;
+    width: 200px;
+    height: 200px;
+    font-size: 11px;
+    }
 
 footer {
 padding: 0px;
