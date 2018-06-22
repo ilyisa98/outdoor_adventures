@@ -280,9 +280,7 @@ img {
   background-color: #000;
   z-index: 1;
   width: 200px;
-  height: 200px;
-  transition: all 3s ease-in-out;
-  transform: scale(1.1); }
+  height: 200px; }
 
 a {
   text-align: center;
