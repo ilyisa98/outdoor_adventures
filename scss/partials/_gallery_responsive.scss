@@ -6,8 +6,8 @@
 display: grid;
 grid-template-columns: repeat(10, 1fr);
 grid-template-rows: repeat(20, 1fr);
-width: 1440px;
-height: 300vh;
+width: 100%;
+height: 1800px;
 background-size: cover;
 }
 .main_img {
@@ -234,8 +234,8 @@ margin-top: 10px; }
 display: grid;
 grid-template-columns: repeat(10, 1fr);
 grid-template-rows: repeat(20, 1fr);
-width: 1024px;
-height: 260vh;
+width: 100%;
+height: 1400px;
 background-size: cover;
 }
 .main_img {
@@ -459,8 +459,8 @@ margin-top: 10px; }
 display: grid;
 grid-template-columns: repeat(10, 1fr);
 grid-template-rows: repeat(20, 1fr);
-width: 768px;
-height: 200vh;
+width: 100%;
+height: 1000px;
 background-size: cover;
 }
 .main_img {
@@ -685,8 +685,8 @@ margin-top: 10px; }
 display: grid;
 grid-template-columns: repeat(10, 1fr);
 grid-template-rows: repeat(20, 1fr);
-width: 425px;
-height: 260vh;
+width: 100%;
+height: 1400px;
 background-size: cover;
 }
 .main_img {
@@ -773,7 +773,7 @@ margin-bottom: 10px; }
 
 #camp_spot_1 {
 display: inline-block;
-grid-column-start: 4;
+grid-column-start: 3;
 grid-column-end: 6;
 grid-row-start: 3;
 grid-row-end: 4;
@@ -781,12 +781,12 @@ background-color: #000;
 z-index: 1;
 width: 100px;
 height: 100px;
-margin-left: 55px; }
+margin-left: 50px; }
 
 #camp_spot_2 {
 display: inline-block;
 grid-column-start: 6;
-grid-column-end: 8;
+grid-column-end: 10;
 grid-row-start: 3;
 grid-row-end: 4;
 background-color: #000;
@@ -805,7 +805,7 @@ background-color: #000;
 z-index: 1;
 width: 100px;
 height: 100px;
-margin-left: 55px;
+margin-left: 50px;
 margin-top: 10px; }
 
 #camp_spot_4 {
@@ -986,8 +986,8 @@ margin-top: 10px; }
 display: grid;
 grid-template-columns: repeat(10, 1fr);
 grid-template-rows: repeat(20, 1fr);
-width: 375px;
-height: 240vh;
+width: 100%;
+height: 1300px;
 background-size: cover;
 }
 .main_img {
@@ -1002,7 +1002,7 @@ border-bottom-left-radius: 10px;
 .main_nav_li, .main_nav_a {
 padding-left: 2px;
 padding-right: 2px;
-margin-left: 2px;}
+margin-left: 1px;}
 
 .dropdown-content a {
 padding: 10px 15px;
@@ -1013,7 +1013,7 @@ line-height: 2px;
 }
 
 .main_nav_li, .main_nav_a{
-margin-right: 5px;
+margin-right: 1px;
 }
 .dropbtn{ //gallery button
 margin-left: 0px;
@@ -1281,8 +1281,8 @@ margin-top: 10px; }
 display: grid;
 grid-template-columns: repeat(10, 1fr);
 grid-template-rows: repeat(20, 1fr);
-width: 325px;
-height: 220vh;
+width: 100%;
+height: 1100px;
 background-size: cover;
 }
 .main_img {
@@ -1297,7 +1297,7 @@ border-bottom-left-radius: 10px;
 .main_nav_li, .main_nav_a {
 padding-left: 1px;
 padding-right: 1px;
-margin-left: 2px;}
+margin-left: 1px;}
 
 .dropdown-content a {
 padding: 10px 15px;
@@ -1308,7 +1308,7 @@ line-height: 2px;
 }
 
 .main_nav_li, .main_nav_a{
-margin-right: 5px;
+margin-right: 1px;
 }
 .dropbtn{ //gallery button
 margin-left: 0px;
@@ -1317,7 +1317,7 @@ margin-right: 0px;
 .main_nav_a, .dropbtn {
 display: inline-block;
 color: white;
-padding: 3px 3px;
+padding: 1px 1px;
 font-size: 20px;}
 
 p{
@@ -1373,7 +1373,7 @@ background-color: #000;
 z-index: 1;
 width: 80px;
 height: 80px;
-margin-left: 35px; }
+margin-left: 20px; }
 
 #camp_spot_2 {
 display: inline-block;
@@ -1397,7 +1397,7 @@ background-color: #000;
 z-index: 1;
 width: 80px;
 height: 80px;
-margin-left: 35px;
+margin-left: 20px;
 margin-top: 10px; }
 
 #camp_spot_4 {
@@ -1423,7 +1423,7 @@ background-color: #000;
 z-index: 1;
 width: 80px;
 height: 80px;
-margin-left: 35px; }
+margin-left: 20px; }
 
 
 #fish_spot_2 {
@@ -1448,7 +1448,7 @@ background-color: #000;
 z-index: 1;
 width: 80px;
 height: 80px;
-margin-left: 35px;
+margin-left: 20px;
 margin-top: 10px; }
 
 #fish_spot_4 {
@@ -1474,7 +1474,7 @@ background-color: #000;
 z-index: 1;
 width: 80px;
 height: 80px;
-margin-left: 35px; }
+margin-left: 20px; }
 
 
 #hike_spot_2 {
@@ -1500,7 +1500,7 @@ background-color: #000;
 z-index: 1;
 width: 80px;
 height: 80px;
-margin-left: 35px;
+margin-left: 20px;
 margin-top: 10px; }
 
 #hike_spot_4 {
@@ -1526,7 +1526,7 @@ background-color: #000;
 z-index: 1;
 width: 80px;
 height: 80px;
-margin-left: 35px; }
+margin-left: 20px; }
 
 #rock_spot_2 {
 display: inline-block;
@@ -1550,7 +1550,7 @@ background-color: #000;
 z-index: 1;
 width: 80px;
 height: 80px;
-margin-left: 35px;
+margin-left: 20px;
 margin-top: 10px; }
 
 #rock_spot_4 {

@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
 
 .container {
-  width: 100hh;
+  width: 100%;
   height: 240vh;
   background-color: transparent;
   background-blend-mode: color-burn;
@@ -16,6 +16,11 @@
   grid-template-columns: repeat(10, 1fr);
   background-image: url(../images/blurred_background.jpg);
   background-size: cover; }
+
+.container *{
+    border: 1px black solid;
+}
+
 
 /*nav bar*/
 nav {
@@ -170,10 +175,6 @@ li.dropdown {
   width: 250px;
   z-index: 100; }
 
-.hike_img:hover {
-  transition: all 2s ease-in-out;
-  transform: rotate(360deg) scale(1); }
-
 #hiking_head:focus {
   border: 2px solid red; }
 
@@ -200,10 +201,6 @@ a * {
   height: 250px;
   width: 250px; }
 
-.camp_img:hover {
-  transition: all 2s ease-in-out;
-  transform: rotate(-360deg) scale(1); }
-
 /*fishing image*/
 .gallery_fishing {
   display: inline-block;
@@ -219,9 +216,6 @@ a * {
   height: 250px;
   width: 250px; }
 
-.fish_img:hover {
-  transition: all 2s ease-in-out;
-  transform: rotate(360deg) scale(1); }
 
 /*rock climbing image*/
 .gallery_rock {
@@ -237,10 +231,6 @@ a * {
 .rock_img {
   height: 250px;
   width: 250px; }
-
-.rock_img:hover {
-  transition: all 2s ease-in-out;
-  transform: rotate(-360deg) scale(1); }
 
 
 /*descriptions*/
@@ -263,11 +253,11 @@ a * {
       border: 1px solid black;
       border-radius: 10px;
       font-size: 12px;
+      margin-top: 15px;
     
 }
 
 #hiking_desc {
-  margin-top: 15px;
   grid-column-start: 5;
   grid-column-end: 6;
   grid-row-start: 13;
@@ -276,7 +266,6 @@ a * {
   background-position: left top; }
 
 #camping_desc {
-  margin-top: 15px;
   grid-column-start: 6;
   grid-column-end: 7;
   grid-row-start: 13;
@@ -284,7 +273,6 @@ a * {
   background-image: url(../images/camping.jpg); }
 
 #fishing_desc {
-  margin-top: 15px;
   grid-column-start: 7;
   grid-column-end: 8;
   grid-row-start: 13;
@@ -292,7 +280,6 @@ a * {
   background-image: url(../images/fishing.jpg); }
 
 #rock_desc {
-  margin-top: 15px;
   grid-column-start: 8;
   grid-column-end: 9;
   grid-row-start: 13;
@@ -317,10 +304,6 @@ border: 1px solid black;}
     font-size: 16px;
     color: #000;
 }
-
-
-
-
 
 
 /*responsiveness*/

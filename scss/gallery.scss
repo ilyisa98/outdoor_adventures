@@ -20,6 +20,10 @@
   background-size: cover;
 }
 
+.container *{
+    border: 1px black solid;
+}
+
 //container: display in grid format, grid template rows and columns: ten fractions, width and height set, background image imported and cover the container
 
 //nav bar
@@ -144,7 +148,7 @@ img {
 .gallery {
   display: inline-block;
   grid-column-start: 3;
-  grid-column-end: 10;
+  grid-column-end: 11;
   grid-row-start: 2;
   grid-row-end: 15;
   background-color: transparent;
@@ -173,279 +177,133 @@ img {
   margin-bottom: 10px; }
 
 #camp_spot_1 {
-  display: inline-block;
   grid-column-start: 4;
   grid-column-end: 6;
   grid-row-start: 3;
   grid-row-end: 4;
-  background-color: #000;
-  z-index: 1;
-  width: 200px;
-  height: 200px;
   margin-left: 35px; }
-
-#camp_spot_1:hover {
-  transition: all 3s ease-in-out;
-  transform: scale(1.5); }
 
 #camp_spot_2 {
-  display: inline-block;
   grid-column-start: 6;
   grid-column-end: 8;
   grid-row-start: 3;
   grid-row-end: 4;
-  background-color: #000;
-  z-index: 1;
-  width: 200px;
-  height: 200px;
   margin-left: 10px; }
-
-#camp_spot_2:hover {
-  transition: all 3s ease-in-out;
-  transform: scale(1.5); }
 
 #camp_spot_3 {
-  display: inline-block;
   grid-column-start: 4;
   grid-column-end: 6;
   grid-row-start: 4;
   grid-row-end: 5;
-  background-color: #000;
-  z-index: 1;
-  width: 200px;
-  height: 200px;
   margin-left: 10px;
   margin-top: 10px; }
-
-#camp_spot_3:hover {
-  transition: all 3s ease-in-out;
-  transform: scale(1.5); }
 
 #camp_spot_4 {
-  display: inline-block;
   grid-column-start: 6;
   grid-column-end: 8;
   grid-row-start: 4;
   grid-row-end: 5;
-  background-color: #000;
-  z-index: 1;
-  width: 200px;
-  height: 200px;
   margin-left: 10px;
   margin-top: 10px; }
-
-#camp_spot_4:hover {
-  transition: all 3s ease-in-out;
-  transform: scale(1.5); }
 
 #fish_spot_1 {
-  display: inline-block;
   grid-column-start: 4;
   grid-column-end: 6;
   grid-row-start: 5;
   grid-row-end: 6;
-  background-color: #000;
-  z-index: 1;
-  width: 200px;
-  height: 200px;
   margin-left: 35px; }
-
-#fish_spot_1:hover {
-  transform: scale(1.3);
-  transition: all 2s ease-in-out;
-  transform: rotate(360deg) scale(1.5) translateX(10px); }
 
 #fish_spot_2 {
-  display: inline-block;
   grid-column-start: 6;
   grid-column-end: 8;
   grid-row-start: 5;
   grid-row-end: 6;
-  background-color: #000;
-  z-index: 1;
-  width: 200px;
-  height: 200px;
   margin-left: 10px; }
-
-#fish_spot_2:hover {
-  transform: scale(1.3);
-  transition: all 2s ease-in-out;
-  transform: rotate(360deg) scale(1.5) translateX(10px); }
 
 #fish_spot_3 {
-  display: inline-block;
   grid-column-start: 4;
   grid-column-end: 6;
   grid-row-start: 6;
   grid-row-end: 7;
-  background-color: #000;
-  z-index: 1;
-  width: 200px;
-  height: 200px;
   margin-left: 10px;
   margin-top: 10px; }
-
-#fish_spot_3:hover {
-  transform: scale(1.3);
-  transition: all 2s ease-in-out;
-  transform: rotate(360deg) scale(1.5) translateX(10px); }
-
 
 #fish_spot_4 {
-  display: inline-block;
   grid-column-start: 6;
   grid-column-end: 8;
   grid-row-start: 6;
   grid-row-end: 7;
-  background-color: #000;
-  z-index: 1;
-  width: 200px;
-  height: 200px;
   margin-left: 10px;
   margin-top: 10px; }
-
-#fish_spot_4:hover {
-  transform: scale(1.3);
-  transition: all 2s ease-in-out;
-  transform: rotate(360deg) scale(1.5) translateX(10px); }
 
 #hike_spot_1 {
-  display: inline-block;
   grid-column-start: 4;
   grid-column-end: 6;
   grid-row-start: 7;
   grid-row-end: 8;
-  background-color: #000;
-  z-index: 1;
-  width: 200px;
-  height: 200px;
   margin-left: 35px; }
-
-#hike_spot_1:hover {
-  transform: scale(1.3);
-  transition: all 2s ease-in-out;
-  transform: rotate(-360deg) scale(1.5) translateX(10px); }
 
 #hike_spot_2 {
-  display: inline-block;
   grid-column-start: 6;
   grid-column-end: 8;
   grid-row-start: 7;
   grid-row-end: 8;
-  background-color: #000;
-  z-index: 1;
-  width: 200px;
-  height: 200px;
   margin-left: 10px; }
-
-#hike_spot_2:hover {
-  transform: scale(1.3);
-  transition: all 2s ease-in-out;
-  transform: rotate(-360deg) scale(1.5) translateX(10px); }
 
 #hike_spot_3 {
-  display: inline-block;
   grid-column-start: 4;
   grid-column-end: 6;
   grid-row-start: 7;
   grid-row-end: 8;
-  background-color: #000;
-  z-index: 1;
-  width: 200px;
-  height: 200px;
   margin-left: 10px;
   margin-top: 10px; }
-
-#hike_spot_3:hover {
-  transform: scale(1.3);
-  transition: all 2s ease-in-out;
-  transform: rotate(-360deg) scale(1.5) translateX(10px); }
-
 
 #hike_spot_4 {
-  display: inline-block;
   grid-column-start: 6;
   grid-column-end: 8;
   grid-row-start: 7;
   grid-row-end: 8;
-  background-color: #000;
-  z-index: 1;
-  width: 200px;
-  height: 200px;
   margin-left: 10px;
   margin-top: 10px; }
-
-#hike_spot_4:hover {
-  transform: scale(1.3);
-  transition: all 2s ease-in-out;
-  transform: rotate(-360deg) scale(1.5) translateX(10px); }
 
 #rock_spot_1 {
-  display: inline-block;
   grid-column-start: 4;
   grid-column-end: 6;
   grid-row-start: 8;
   grid-row-end: 9;
-  background-color: #000;
-  z-index: 1;
-  width: 200px;
-  height: 200px;
   margin-left: 35px; }
 
-#rock_spot_1:hover {
-  transition: all 3s ease-in-out;
-  transform: scale(1.5); }
-
 #rock_spot_2 {
-  display: inline-block;
   grid-column-start: 6;
   grid-column-end: 8;
   grid-row-start: 8;
   grid-row-end: 9;
-  background-color: #000;
-  z-index: 1;
-  width: 200px;
-  height: 200px;
   margin-left: 10px; }
 
-
-#rock_spot_2:hover {
-  transition: all 3s ease-in-out;
-  transform: scale(1.5); }
-
 #rock_spot_3 {
-  display: inline-block;
   grid-column-start: 4;
   grid-column-end: 6;
   grid-row-start: 8;
   grid-row-end: 9;
-  background-color: #000;
-  z-index: 1;
-  width: 200px;
-  height: 200px;
   margin-left: 10px;
   margin-top: 10px; }
 
-#rock_spot_3:hover {
-  transition: all 3s ease-in-out;
-  transform: scale(1.5); }
-
 #rock_spot_4 {
-  display: inline-block;
   grid-column-start: 6;
   grid-column-end: 8;
   grid-row-start: 8;
   grid-row-end: 9;
+  margin-left: 10px;
+  margin-top: 10px; }
+
+#rock_spot_4:hover, #rock_spot_3:hover, #rock_spot_2:hover, #rock_spot_1:hover, #hike_spot_4:hover, #hike_spot_3:hover, #hike_spot_2:hover, #hike_spot_1:hover, #fish_spot_4:hover, #fish_spot_3:hover, #fish_spot_2:hover, #fish_spot_1:hover, #camp_spot_4:hover, #camp_spot_3:hover, #camp_spot_2:hover, #camp_spot_1:hover  {
+  display: inline-block;
   background-color: #000;
   z-index: 1;
   width: 200px;
   height: 200px;
-  margin-left: 10px;
-  margin-top: 10px; }
-
-#rock_spot_4:hover {
   transition: all 3s ease-in-out;
-  transform: scale(1.5); }
+  transform: scale(1.1); }
 
 a{
   text-align: center;
@@ -489,5 +347,4 @@ footer {
 @include medium_mobile;
 
 @include small_mobile;
-
 
