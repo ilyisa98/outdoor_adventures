@@ -12,9 +12,6 @@
   background-image: url(../images/blurred_background.jpg);
   background-size: cover; }
 
-.container * {
-  border: 1px black solid; }
-
 .main_nav {
   position: sticky;
   padding: 2px;
