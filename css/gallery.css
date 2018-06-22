@@ -275,7 +275,7 @@ img {
   margin-left: 10px;
   margin-top: 10px; }
 
-#rock_spot_4:hover, #rock_spot_3:hover, #rock_spot_2:hover, #rock_spot_1:hover, #hike_spot_4:hover, #hike_spot_3:hover, #hike_spot_2:hover, #hike_spot_1:hover, #fish_spot_4:hover, #fish_spot_3:hover, #fish_spot_2:hover, #fish_spot_1:hover, #camp_spot_4:hover, #camp_spot_3:hover, #camp_spot_2:hover, #camp_spot_1:hover {
+#rock_spot_4, #rock_spot_3, #rock_spot_2, #rock_spot_1, #hike_spot_4, #hike_spot_3, #hike_spot_2, #hike_spot_1, #fish_spot_4#fish_spot_3, #fish_spot_2, #fish_spot_1, #camp_spot_4, #camp_spot_3, #camp_spot_2, #camp_spot_1 {
   display: inline-block;
   background-color: #000;
   z-index: 1;
